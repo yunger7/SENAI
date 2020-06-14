@@ -56,8 +56,74 @@
 
 # ==================================
 
-# 2.15
-s = 'goodbye'
+# # 2.15
+# s = 'goodbye'
 
-# a)
-print(s[0] == 'g')
+# # a)
+# print(s[0] == 'g')
+
+# # b)
+# print(s[6] == 'g')
+
+# # c)
+# print(s[0] == 'g' and s[1] == 'a')
+
+# # d)
+# print(s[-2] == 'x')
+
+# # e)
+# print(s[3] == 'd')
+
+# # f)
+# print(s[0] == s[-1])
+
+# #g)
+# print(s[:4] == 'tion')
+
+# ==================================
+
+# # 2.16
+# # a)
+# a = 6
+# b = 7
+
+# # b)
+# c = (a + b) / 2
+
+# # c)
+# estoque = ['papel','grampos','lapis']
+
+# # d)
+# primeiro = 'John'
+# meio = 'Fitzgerald'
+# ultimo = 'Kennedy'
+
+# # e)
+# nomecompleto = '{} {} {}'.format(primeiro, meio, ultimo)
+
+# ==================================
+
+# 2.17
+# Faltam instrucoes
+
+# ==================================
+
+# # 2.18
+# # a)
+# flores = ['rosa','buganvilia','iuca','margarida','dalia','lirio dos vales']
+
+# # b)
+# print('batata' in flores)
+
+# # c)
+# espinhosas = flores[:3]
+
+# # d)
+# venenosas = flores[-1]
+
+# # e)
+# perigosas = [espinhosas] + [venenosas]
+
+# ==================================
+
+# 2.19
