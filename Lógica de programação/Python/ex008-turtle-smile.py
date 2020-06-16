@@ -35,3 +35,5 @@ tart.forward(75)
 tart.pendown()
 
 tart.circle(75, 175)
+
+turtle.Screen().exitonclick()
