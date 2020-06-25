@@ -16,6 +16,7 @@
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
@@ -62,7 +63,7 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="763984614506530" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.492" hotspotY="0.992" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -80,29 +81,32 @@
                 <behavior-type name="Pin" sid="193395300645070">
                     <behavior id="Pin" />
                 </behavior-type>
+                <behavior-type name="Flash" sid="756351943692758">
+                    <behavior id="Flash" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="parado" pingpong="0" repeatcount="0" repeatto="0" sid="552953744446672" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_stand.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.956522" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_stand.png" />
                 </animation>
                 <animation framecount="11" loop="1" name="andando" pingpong="0" repeatcount="0" repeatto="0" sid="652102908220499" speed="10">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk01.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk02.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk03.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk04.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk05.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk06.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk07.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk08.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk09.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk10.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.505155" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk11.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.958763" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk01.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.958763" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk02.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.958763" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk03.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.958763" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk04.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.958763" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk05.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.958763" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk06.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.958763" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk07.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.958763" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk08.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.958763" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk09.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.958763" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk10.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.958763" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk11.png" />
                 </animation>
                 <animation framecount="1" loop="0" name="pulando" pingpong="0" repeatcount="0" repeatto="0" sid="411997855101274" speed="0">
-                    <frame duration="1" hotspotX="0.507463" hotspotY="0.5" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_jump.png" />
+                    <frame duration="1" hotspotX="0.507463" hotspotY="0.957447" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_jump.png" />
                 </animation>
                 <animation framecount="1" loop="0" name="caindo" pingpong="0" repeatcount="0" repeatto="0" sid="871678848119882" speed="0">
-                    <frame duration="1" hotspotX="0.507246" hotspotY="0.5" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_hurt.png">
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.956522" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_hurt.png">
                         <collision-poly>
                             <point x="0.15942" y="0.119565" />
                             <point x="0.492754" y="0" />
@@ -240,6 +244,20 @@
                     <frame duration="1" hotspotX="1.10909" hotspotY="0.510638" />
                     <frame duration="1" hotspotX="0.648148" hotspotY="0.510638" />
                     <frame duration="1" hotspotX="0.503106" hotspotY="0.510638" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="inimigo1" sid="746820244945524">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="535125796918138">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="965070787637120" speed="5">
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.529412" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\blockerMad.png" />
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.529412" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\blockerSad.png" />
                 </animation>
             </animation-folder>
         </object-type>

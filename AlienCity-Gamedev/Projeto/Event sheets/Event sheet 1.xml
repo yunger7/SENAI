@@ -139,18 +139,46 @@
         <event-block sid="391261694453852">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="157829955217809" type="heroi">
-                    <param id="0" name="Object">inimigo</param>
+                    <param id="0" name="Object">inimigo1</param>
                 </condition>
+                <condition behavior="Flash" id="0" inverted="1" name="Is flashing" sid="547490095342891" type="animation" />
             </conditions>
-            <actions>
-                <action id="-11" name="Subtract from" sid="645672189935345" type="System">
-                    <param id="0" name="Variable">life</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="5" name="Set frame" sid="134292213564501" type="life">
-                    <param id="0" name="Frame number">life</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="218790338317325">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="338882253614335" type="heroi">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">inimigo1.Y</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="734289499969967" type="inimigo1" />
+                    </actions>
+                </event-block>
+                <event-block sid="429889735741193">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="291123195977732" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="645672189935345" type="System">
+                            <param id="0" name="Variable">life</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="134292213564501" type="life">
+                            <param id="0" name="Frame number">life</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="285120468787656" type="animation">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="891967771047346" type="heroi">
+                            <param id="0" name="X">heroi.X-60</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="501549867724297">
             <conditions>
@@ -173,6 +201,38 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="328504395918276">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="774774006945352" type="System">
+                    <param id="0" name="Interval (seconds)">random(1,3)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="603003829973833" type="inimigo1">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="698545412389058">
+            <conditions>
+                <condition behavior="Platform" id="3" name="Is jumping" sid="952773898995904" type="inimigo1" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="157382183269892" type="inimigo1">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="299591736404518">
+            <conditions>
+                <condition id="-22" name="Else" sid="174753283579165" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="132908630962893" type="inimigo1">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
