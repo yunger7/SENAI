@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="life" sid="441630704632137" static="0" type="number">3</variable>
         <event-block sid="713381774298430">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="808402510749614" type="System" />
@@ -15,6 +16,13 @@
                 <action behavior="Pin" id="0" name="Pin to object" sid="665398297522724" type="animation">
                     <param id="0" name="Pin to">heroi</param>
                     <param id="1" name="Mode">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="954628594542683" type="System">
+                    <param id="0" name="Variable">life</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="5" name="Set frame" sid="923820199627657" type="life">
+                    <param id="0" name="Frame number">3</param>
                 </action>
             </actions>
         </event-block>
@@ -127,6 +135,44 @@
                     <param id="0" name="Control">2</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="391261694453852">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="157829955217809" type="heroi">
+                    <param id="0" name="Object">inimigo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="645672189935345" type="System">
+                    <param id="0" name="Variable">life</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="134292213564501" type="life">
+                    <param id="0" name="Frame number">life</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="501549867724297">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="382314657265916" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="904145311459632">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="971669440029594" type="System">
+                            <param id="0" name="Variable">life</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="342252786431220" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

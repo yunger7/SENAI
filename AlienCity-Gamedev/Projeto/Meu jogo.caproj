@@ -12,11 +12,14 @@
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
@@ -42,7 +45,7 @@
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
         <prop name="Preload sounds">Yes</prop>
-        <prop name="Preview browser">Firefox</prop>
+        <prop name="Preview browser">Edge</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
@@ -59,19 +62,6 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="763984614506530" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="base" sid="300896574262184">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="367440731728170">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="742731149584536" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
@@ -187,6 +177,69 @@
                             <point x="0" y="0.5" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dirt_background" sid="143945448492272">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="169361447669484">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\grassCenter.png" />
+        </object-type>
+        <object-type name="base" sid="186623955850925">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="790073073425453">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\grassHalfMid.png" />
+        </object-type>
+        <object-type name="plataforma_flutuante" sid="158359201187172">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="827302700207435">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Jumpthru" sid="680639299490593">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="499376553818566" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="-0.333333" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\bridgeLogs.png">
+                        <collision-poly>
+                            <point x="0.694444" y="0.185185" />
+                            <point x="0.5" y="0.037037" />
+                            <point x="0.305556" y="0.185185" />
+                            <point x="0.944444" y="0.851852" />
+                            <point x="0.5" y="0.962963" />
+                            <point x="0.0555556" y="0.851852" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="life" sid="958502649210212">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="305943740648643" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\HUD\heart-hud2.png">
+                        <collision-poly>
+                            <point x="0.0122449" y="0.133333" />
+                            <point x="0.5" y="0" />
+                            <point x="0.814286" y="0.488889" />
+                            <point x="0.5" y="0.844444" />
+                            <point x="0.0244898" y="0.733333" />
+                            <point x="0.00612245" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1.10909" hotspotY="0.510638" />
+                    <frame duration="1" hotspotX="0.648148" hotspotY="0.510638" />
+                    <frame duration="1" hotspotX="0.503106" hotspotY="0.510638" />
                 </animation>
             </animation-folder>
         </object-type>
