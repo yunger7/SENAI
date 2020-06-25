@@ -16,6 +16,7 @@
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
@@ -253,11 +254,56 @@
                 <behavior-type name="Platform" sid="535125796918138">
                     <behavior id="Platform" />
                 </behavior-type>
+                <behavior-type name="Flash" sid="165529932339471">
+                    <behavior id="Flash" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="965070787637120" speed="5">
                     <frame duration="1" hotspotX="0.509804" hotspotY="0.529412" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\blockerMad.png" />
                     <frame duration="1" hotspotX="0.509804" hotspotY="0.529412" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\blockerSad.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="inimigo2" sid="403428718943563">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="914544156698244">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="906091807608530">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="701742660863909">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="693904741291117" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\flyFly1.png">
+                        <collision-poly>
+                            <point x="0.222222" y="0.444444" />
+                            <point x="0.5" y="0" />
+                            <point x="0.791667" y="0.416667" />
+                            <point x="0.888889" y="0.5" />
+                            <point x="0.944444" y="0.888889" />
+                            <point x="0.5" y="0.861111" />
+                            <point x="0.0555556" y="0.888889" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.493333" hotspotY="0.483871" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\flyFly2.png">
+                        <collision-poly>
+                            <point x="0.16" y="0.387097" />
+                            <point x="0.493333" y="0" />
+                            <point x="0.813333" y="0.451613" />
+                            <point x="0.973333" y="0.483871" />
+                            <point x="0.946667" y="0.870968" />
+                            <point x="0.493333" y="1" />
+                            <point x="0.0666667" y="0.83871" />
+                            <point x="0.0133333" y="0.483871" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
