@@ -307,6 +307,23 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="inimigo3" sid="796679752851290">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="964550539787140">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="909217690995852">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="andando" pingpong="0" repeatcount="0" repeatto="0" sid="479087898339640" speed="4">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.516129" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\snailWalk1.png" />
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.516129" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\snailWalk2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

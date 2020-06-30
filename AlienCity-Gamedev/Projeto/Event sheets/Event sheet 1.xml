@@ -243,6 +243,61 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="636004020015064">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="697013263243397" type="heroi">
+                    <param id="0" name="Object">inimigo3</param>
+                </condition>
+                <condition behavior="Flash" id="0" inverted="1" name="Is flashing" sid="520938512286990" type="animation" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="310404540506759">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="887772648679421" type="heroi">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">inimigo3.Y</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="659690218993222" type="inimigo3">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="701212873969219" type="inimigo3">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">0.5</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="652501086958091" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="563040520095459" type="inimigo3" />
+                    </actions>
+                </event-block>
+                <event-block sid="975922497863216">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="959815820497335" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="122746901916896" type="System">
+                            <param id="0" name="Variable">life</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="441045320848611" type="life">
+                            <param id="0" name="Frame number">life</param>
+                        </action>
+                        <action behavior="Flash" id="0" name="Flash" sid="366416114360512" type="animation">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="778568103027503" type="heroi">
+                            <param id="0" name="X">heroi.X-60</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
         <event-block sid="501549867724297">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="382314657265916" type="System">
@@ -307,6 +362,23 @@
                 </action>
                 <action behavior="Bullet" id="5" name="Set enabled" sid="470335036425779" type="inimigo2">
                     <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="958790108567708">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="191739919428649" type="inimigo3" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="11" name="Set enabled" sid="900051522796960" type="inimigo3">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Platform" id="7" name="Simulate control" sid="340016616201971" type="inimigo3">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="907964091261313" type="inimigo3">
+                    <param id="0" name="Animation">&quot;andando&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
