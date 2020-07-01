@@ -438,6 +438,144 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="background" sid="228400521926507">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\background.png" />
+        </object-type>
+        <object-type name="flag" sid="623728185561618">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="off" pingpong="0" repeatcount="1" repeatto="0" sid="637014234697131" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\flagRedHanging.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.371429" y="0.328571" />
+                            <point x="0.371429" y="0.542857" />
+                            <point x="0.342857" y="0.757143" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="on" pingpong="0" repeatcount="1" repeatto="0" sid="546968645255064" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\flagRed.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\flagRed2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="game_over" sid="742638425745590">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="635615967025376" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502164" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\mobile pack\gameover-panel.png">
+                        <collision-poly>
+                            <point x="0.0919811" y="0.168831" />
+                            <point x="0.5" y="0" />
+                            <point x="0.926887" y="0.134199" />
+                            <point x="0.903302" y="0.822511" />
+                            <point x="0.5" y="0.978355" />
+                            <point x="0.0825472" y="0.848485" />
+                            <point x="0.0683962" y="0.497835" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="button_yes" sid="943438582542030">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="167998821380158" speed="5">
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.507042" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\mobile pack\game-over-continue.png">
+                        <collision-poly>
+                            <point x="0.15942" y="0.15493" />
+                            <point x="0.492754" y="0" />
+                            <point x="0.84058" y="0.15493" />
+                            <point x="0.985507" y="0.492958" />
+                            <point x="0.84058" y="0.84507" />
+                            <point x="0.492754" y="0.957747" />
+                            <point x="0.173913" y="0.830986" />
+                            <point x="0.0144928" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="button_no" sid="619056054095908">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="972014219212752" speed="5">
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.507042" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\mobile pack\game-over-back.png">
+                        <collision-poly>
+                            <point x="0.15942" y="0.15493" />
+                            <point x="0.492754" y="0" />
+                            <point x="0.84058" y="0.15493" />
+                            <point x="0.985507" y="0.492958" />
+                            <point x="0.84058" y="0.84507" />
+                            <point x="0.492754" y="0.957747" />
+                            <point x="0.173913" y="0.830986" />
+                            <point x="0.0144928" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="coin_bronze" sid="568629952975892">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="719227655636590" speed="5">
+                    <frame duration="1" hotspotX="0.857143" hotspotY="0.171429" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\coinBronze.png">
+                        <collision-poly>
+                            <point x="0.573554" y="0" />
+                            <point x="0.85124" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.177843" />
+                            <point x="1" y="0.556851" />
+                            <point x="0.85124" y="0.702624" />
+                            <point x="0.550413" y="0.556851" />
+                            <point x="0.457851" y="0.177843" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="coin_silver" sid="138803595017941">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="462989105418664" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\coinSilver.png">
+                        <collision-poly>
+                            <point x="0.328571" y="0.328571" />
+                            <point x="0.5" y="0.271429" />
+                            <point x="0.671429" y="0.328571" />
+                            <point x="0.742857" y="0.5" />
+                            <point x="0.685714" y="0.685714" />
+                            <point x="0.5" y="0.757143" />
+                            <point x="0.314286" y="0.685714" />
+                            <point x="0.257143" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="coin_gold" sid="226997414904307">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="590213190565616" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\coinGold.png">
+                        <collision-poly>
+                            <point x="0.328571" y="0.328571" />
+                            <point x="0.5" y="0.271429" />
+                            <point x="0.671429" y="0.328571" />
+                            <point x="0.742857" y="0.5" />
+                            <point x="0.685714" y="0.685714" />
+                            <point x="0.5" y="0.757143" />
+                            <point x="0.314286" y="0.685714" />
+                            <point x="0.257143" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

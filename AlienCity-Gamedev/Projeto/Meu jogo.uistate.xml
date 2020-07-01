@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="1">Layout 1</layout>
-        <event-sheet order="2">Event sheet 1</event-sheet>
+        <layout order="1">Layout 1</layout>
+        <event-sheet active="1" order="2">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -44,5 +44,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/respawnfogo/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/plataforma_horizontal/" />
+        <folder expanded="1" path="animation-folder/flag/" />
+        <folder expanded="1" path="animation-folder/game_over/" />
+        <folder expanded="1" path="animation-folder/button_yes/" />
+        <folder expanded="1" path="animation-folder/button_no/" />
+        <folder expanded="1" path="animation-folder/coin_bronze/" />
+        <folder expanded="1" path="animation-folder/coin_silver/" />
+        <folder expanded="1" path="animation-folder/coin_gold/" />
     </folders-expanded>
 </c2uistate>

@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="checkpoint" sid="706581703919416" static="0" type="number">0</variable>
         <variable constant="0" name="life" sid="441630704632137" static="0" type="number">3</variable>
         <event-block sid="713381774298430">
             <conditions>
@@ -29,6 +30,23 @@
                     <param id="1" name="Mode">0</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="652706493244589">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="377858617874071" type="System">
+                            <param id="0" name="Variable">checkpoint</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="998459605426112" type="heroi">
+                            <param id="0" name="Object">flag</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="501549867724297">
             <conditions>
@@ -537,6 +555,23 @@
                 </action>
                 <action id="5" name="Set frame" sid="618032601749899" type="life">
                     <param id="0" name="Frame number">life</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="181715399622495">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="553486223595633" type="heroi">
+                    <param id="0" name="Object">flag</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="771648395911077" type="flag">
+                    <param id="0" name="Animation">&quot;on&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="382816327566993" type="System">
+                    <param id="0" name="Variable">checkpoint</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>
