@@ -10,6 +10,7 @@
     <unique-id>1tep2i4wjhzfi</unique-id>
     <saved-with-version>27700</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
@@ -576,6 +577,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Function" sid="290962103263722">
+            <plugin id="Function" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -591,6 +595,7 @@
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
+        <global-instance type="Function" uid="37" />
     </global-instances>
     <sounds-folder />
     <music-folder />

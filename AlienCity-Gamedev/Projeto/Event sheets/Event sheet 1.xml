@@ -70,6 +70,27 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="811870434199863">
+            <conditions>
+                <condition id="0" name="On function" sid="747740869337858" type="Function">
+                    <param id="0" name="Name">&quot;perde_vida&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="645672189935345" type="System">
+                    <param id="0" name="Variable">life</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="134292213564501" type="life">
+                    <param id="0" name="Frame number">life</param>
+                </action>
+                <action behavior="Flash" id="0" name="Flash" sid="285120468787656" type="animation">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">1.0</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="120274217873129">
             <conditions>
                 <condition behavior="Platform" id="0" name="Is moving" sid="266540090244066" type="heroi" />
@@ -193,7 +214,7 @@
                     <conditions>
                         <condition id="-2" name="Compare Y" sid="338882253614335" type="heroi">
                             <param id="0" name="Comparison">2</param>
-                            <param id="1" name="Y co-ordinate">inimigo1.Y</param>
+                            <param id="1" name="Y co-ordinate">inimigo1.Y+10</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -216,17 +237,9 @@
                         <condition id="-22" name="Else" sid="291123195977732" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-11" name="Subtract from" sid="645672189935345" type="System">
-                            <param id="0" name="Variable">life</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="134292213564501" type="life">
-                            <param id="0" name="Frame number">life</param>
-                        </action>
-                        <action behavior="Flash" id="0" name="Flash" sid="285120468787656" type="animation">
-                            <param id="0" name="&apos;On&apos; time">0.1</param>
-                            <param id="1" name="&apos;Off&apos; time">0.1</param>
-                            <param id="2" name="Duration">1.0</param>
+                        <action id="0" name="Call function" sid="822644473416723" type="Function">
+                            <param id="0" name="Name">&quot;perde_vida&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
                         </action>
                         <action id="-1" name="Set X" sid="891967771047346" type="heroi">
                             <param id="0" name="X">heroi.X-60</param>
@@ -307,17 +320,9 @@
                         <condition id="-22" name="Else" sid="870724783176200" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-11" name="Subtract from" sid="516538329471630" type="System">
-                            <param id="0" name="Variable">life</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="108839587943735" type="life">
-                            <param id="0" name="Frame number">life</param>
-                        </action>
-                        <action behavior="Flash" id="0" name="Flash" sid="664088590904574" type="animation">
-                            <param id="0" name="&apos;On&apos; time">0.1</param>
-                            <param id="1" name="&apos;Off&apos; time">0.1</param>
-                            <param id="2" name="Duration">1.0</param>
+                        <action id="0" name="Call function" sid="379312357439896" type="Function">
+                            <param id="0" name="Name">&quot;perde_vida&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
                         </action>
                     </actions>
                 </event-block>
@@ -380,17 +385,9 @@
                         <condition id="-22" name="Else" sid="959815820497335" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-11" name="Subtract from" sid="122746901916896" type="System">
-                            <param id="0" name="Variable">life</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="441045320848611" type="life">
-                            <param id="0" name="Frame number">life</param>
-                        </action>
-                        <action behavior="Flash" id="0" name="Flash" sid="366416114360512" type="animation">
-                            <param id="0" name="&apos;On&apos; time">0.1</param>
-                            <param id="1" name="&apos;Off&apos; time">0.1</param>
-                            <param id="2" name="Duration">1.0</param>
+                        <action id="0" name="Call function" sid="448930444964403" type="Function">
+                            <param id="0" name="Name">&quot;perde_vida&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
                         </action>
                         <action id="-1" name="Set X" sid="778568103027503" type="heroi">
                             <param id="0" name="X">heroi.X-60</param>
@@ -481,17 +478,9 @@
                         <condition id="-22" name="Else" sid="947340577788767" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-11" name="Subtract from" sid="955444869111771" type="System">
-                            <param id="0" name="Variable">life</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="247622588165068" type="life">
-                            <param id="0" name="Frame number">life</param>
-                        </action>
-                        <action behavior="Flash" id="0" name="Flash" sid="912006625414974" type="animation">
-                            <param id="0" name="&apos;On&apos; time">0.1</param>
-                            <param id="1" name="&apos;Off&apos; time">0.1</param>
-                            <param id="2" name="Duration">1.0</param>
+                        <action id="0" name="Call function" sid="223974131373629" type="Function">
+                            <param id="0" name="Name">&quot;perde_vida&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
                         </action>
                         <action id="-1" name="Set X" sid="385872630637179" type="heroi">
                             <param id="0" name="X">heroi.X-60</param>
