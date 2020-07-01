@@ -20,6 +20,7 @@
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -324,6 +325,76 @@
                 </animation>
                 <animation framecount="1" loop="0" name="morto" pingpong="0" repeatcount="1" repeatto="0" sid="597497358053802" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\snailShell_upsidedown.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="inimigo4" sid="505422099233314">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="361991066861853">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="andando" pingpong="0" repeatcount="1" repeatto="0" sid="188113153590005" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\slimeWalk1.png" />
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\slimeWalk2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="inimigo5" sid="976368764511402">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="705644792913141">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="829523389604451" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\pokerMad.png">
+                        <image-point name="respawn" x="0.5" y="0.972603" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\pokerSad.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fogo" sid="997726844575998">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Rotate" sid="994267646310446">
+                    <behavior id="Rotate" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="159875741616971">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="128385250730109" speed="5">
+                    <frame duration="1" hotspotX="0.541667" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\fireball.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.541667">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.458333" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.458333">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
