@@ -20,7 +20,6 @@
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
-        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -66,14 +65,6 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="763984614506530" speed="5">
                     <frame duration="1" hotspotX="0.492" hotspotY="0.992" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="inimigo" sid="950575879379063">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="533930585056449" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -204,7 +195,7 @@
             </behaviors>
             <texture original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\grassHalfMid.png" />
         </object-type>
-        <object-type name="plataforma_flutuante" sid="158359201187172">
+        <object-type name="plataforma_vertical" sid="158359201187172">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Sine" sid="827302700207435">
@@ -334,11 +325,17 @@
                 <behavior-type name="Platform" sid="361991066861853">
                     <behavior id="Platform" />
                 </behavior-type>
+                <behavior-type name="Flash" sid="773270086606656">
+                    <behavior id="Flash" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="andando" pingpong="0" repeatcount="1" repeatto="0" sid="188113153590005" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\slimeWalk1.png" />
                     <frame duration="1" hotspotX="0.509804" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\slimeWalk2.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="morto" pingpong="0" repeatcount="1" repeatto="0" sid="582782366074158" speed="5">
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\slimeDead.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -352,7 +349,7 @@
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="829523389604451" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\pokerMad.png">
-                        <image-point name="respawn" x="0.5" y="0.972603" />
+                        <image-point name="respawn" x="0.5" y="0.294521" />
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\pokerSad.png" />
                 </animation>
@@ -361,15 +358,12 @@
         <object-type name="fogo" sid="997726844575998">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Rotate" sid="994267646310446">
-                    <behavior id="Rotate" />
-                </behavior-type>
                 <behavior-type name="Bullet" sid="159875741616971">
                     <behavior id="Bullet" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="128385250730109" speed="5">
+                <animation framecount="4" loop="1" name="girando" pingpong="0" repeatcount="0" repeatto="0" sid="128385250730109" speed="5">
                     <frame duration="1" hotspotX="0.541667" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\fireball.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.541667">
                         <collision-poly>
@@ -393,6 +387,52 @@
                             <point x="0" y="0" />
                             <point x="1" y="0" />
                             <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="respawnfogo" sid="275278710664302">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="723325418458917">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="425367857195159" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="208802599456560">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="386255668041696" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="plataforma_horizontal" sid="605416242484237">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="633228907286840">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Jumpthru" sid="388878099867034">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="521099363207537" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="-0.333333" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\bridgeLogs.png">
+                        <collision-poly>
+                            <point x="0.694444" y="0.185185" />
+                            <point x="0.5" y="0.037037" />
+                            <point x="0.305556" y="0.185185" />
+                            <point x="0.944444" y="0.851852" />
+                            <point x="0.5" y="0.962963" />
+                            <point x="0.0555556" y="0.851852" />
                         </collision-poly>
                     </frame>
                 </animation>

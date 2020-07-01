@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">Layout 1</layout>
-        <event-sheet active="1" order="2">Event sheet 1</event-sheet>
+        <layout active="1" order="1">Layout 1</layout>
+        <event-sheet order="2">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -29,12 +29,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/heroi/" />
-        <folder expanded="1" path="animation-folder/inimigo/" />
         <folder expanded="1" path="animation-folder/animation/" />
         <folder expanded="1" path="animation-folder/esquerdo/" />
         <folder expanded="1" path="animation-folder/direito/" />
         <folder expanded="1" path="animation-folder/pulo/" />
-        <folder expanded="1" path="animation-folder/plataforma_flutuante/" />
+        <folder expanded="1" path="animation-folder/plataforma_vertical/" />
         <folder expanded="1" path="animation-folder/life/" />
         <folder expanded="1" path="animation-folder/inimigo1/" />
         <folder expanded="1" path="animation-folder/inimigo2/" />
@@ -42,5 +41,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/inimigo4/" />
         <folder expanded="1" path="animation-folder/inimigo5/" />
         <folder expanded="1" path="animation-folder/fogo/" />
+        <folder expanded="1" path="animation-folder/respawnfogo/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/plataforma_horizontal/" />
     </folders-expanded>
 </c2uistate>
