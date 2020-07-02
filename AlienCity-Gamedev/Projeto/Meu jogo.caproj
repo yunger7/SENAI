@@ -580,6 +580,133 @@
         <object-type name="Function" sid="290962103263722">
             <plugin id="Function" />
         </object-type>
+        <object-type name="porta_bottom" sid="633700107073824">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="fechado" pingpong="0" repeatcount="1" repeatto="0" sid="706327274732276" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\door_closedMid.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="aberto" pingpong="0" repeatcount="1" repeatto="0" sid="371322368786690" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\door_openMid.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="porta_top" sid="993327176263697">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="fechado" pingpong="0" repeatcount="1" repeatto="0" sid="547169514847596" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.142857" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\door_closedTop.png">
+                        <collision-poly>
+                            <point x="0.430556" y="0.0238095" />
+                            <point x="0.569444" y="0.0238095" />
+                            <point x="0.819444" y="0.142857" />
+                            <point x="0.986111" y="0.97619" />
+                            <point x="0.0138889" y="0.97619" />
+                            <point x="0.180556" y="0.142857" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="aberto" pingpong="0" repeatcount="1" repeatto="0" sid="824512753607726" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.142857" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\door_openTop.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.214286" />
+                            <point x="0.5" y="0.0238095" />
+                            <point x="0.875" y="0.214286" />
+                            <point x="0.972222" y="0.5" />
+                            <point x="0.986111" y="0.97619" />
+                            <point x="0.0138889" y="0.97619" />
+                            <point x="0.0277778" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botao" sid="570911717501105">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="195293428168446" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.25" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\buttonRed.png">
+                        <collision-poly>
+                            <point x="0.208333" y="0.3125" />
+                            <point x="0.5" y="0.0208333" />
+                            <point x="0.791667" y="0.3125" />
+                            <point x="0.819444" y="0.5" />
+                            <point x="0.986111" y="0.979167" />
+                            <point x="0.0138889" y="0.979167" />
+                            <point x="0.180556" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="-0.285714" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\buttonRed_pressed.png">
+                        <collision-poly>
+                            <point x="0.680556" y="0.178571" />
+                            <point x="0.5" y="0.0357143" />
+                            <point x="0.319444" y="0.178571" />
+                            <point x="0.986111" y="0.964286" />
+                            <point x="0.0138889" y="0.964286" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="chave" sid="592397534877518">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="573802857903753" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.578947" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\keyYellow.png">
+                        <collision-poly>
+                            <point x="0.177419" y="0.0526316" />
+                            <point x="0.5" y="0.368421" />
+                            <point x="0.629032" y="0.368421" />
+                            <point x="0.967742" y="0.578947" />
+                            <point x="0.725806" y="0.947368" />
+                            <point x="0.5" y="0.631579" />
+                            <point x="0.258065" y="0.973684" />
+                            <point x="0.016129" y="0.578947" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cofre" sid="647470599863294">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="291556067640435" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\lock_yellow.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971429" y="0.0285714" />
+                            <point x="1" y="0.5" />
+                            <point x="0.971429" y="0.971429" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0285714" y="0.971429" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\lock_green.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="chave_hud" sid="260361199381137">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="885875643103069" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\HUD\hud_keyYellow.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\HUD\hud_keyYellow_disabled.png">
+                        <collision-poly>
+                            <point x="0.272727" y="0.3" />
+                            <point x="0.5" y="0.2" />
+                            <point x="0.886364" y="0.125" />
+                            <point x="0.886364" y="0.5" />
+                            <point x="0.613636" y="0.575" />
+                            <point x="0.5" y="0.95" />
+                            <point x="0.113636" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

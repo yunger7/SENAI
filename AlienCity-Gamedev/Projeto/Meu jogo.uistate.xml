@@ -51,5 +51,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/coin_bronze/" />
         <folder expanded="1" path="animation-folder/coin_silver/" />
         <folder expanded="1" path="animation-folder/coin_gold/" />
+        <folder expanded="1" path="animation-folder/porta_bottom/" />
+        <folder expanded="1" path="animation-folder/porta_top/" />
+        <folder expanded="1" path="animation-folder/botao/" />
+        <folder expanded="1" path="animation-folder/chave/" />
+        <folder expanded="1" path="animation-folder/cofre/" />
+        <folder expanded="1" path="animation-folder/chave_hud/" />
     </folders-expanded>
 </c2uistate>

@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="chave" sid="986216848131126" static="0" type="number">0</variable>
         <variable constant="0" name="checkpoint" sid="706581703919416" static="0" type="number">0</variable>
         <variable constant="0" name="life" sid="441630704632137" static="0" type="number">3</variable>
         <event-block sid="713381774298430">
@@ -563,6 +564,82 @@
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="717614076162614">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="273744752480188" type="heroi">
+                    <param id="0" name="Object">botao</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="710016275147952">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="449340315141136" type="heroi">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">botao.Y</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="212341201878256" type="botao">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="810768793562389" type="chave">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="11" name="Set collisions enabled" sid="747974334199356" type="chave">
+                            <param id="0" name="Collisions">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="600759832319181">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="702567400176487" type="heroi">
+                    <param id="0" name="Object">chave</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="557992692209243" type="chave_hud">
+                    <param id="0" name="X">1200</param>
+                    <param id="1" name="Y">50</param>
+                </action>
+                <action id="-9" name="Destroy" sid="154328778352458" type="chave" />
+                <action id="-9" name="Set value" sid="963293675026155" type="System">
+                    <param id="0" name="Variable">chave</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="240906367987209">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="731069491421423" type="heroi">
+                    <param id="0" name="Object">cofre</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="106192123304512">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="289877872365372" type="System">
+                            <param id="0" name="Variable">chave</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="229814531470694" type="porta_bottom">
+                            <param id="0" name="Animation">&quot;aberto&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="396535187009781" type="porta_top">
+                            <param id="0" name="Animation">&quot;aberto&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
