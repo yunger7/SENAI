@@ -313,6 +313,9 @@
                             <param id="1" name="&apos;Off&apos; time">0.1</param>
                             <param id="2" name="Duration">0.5</param>
                         </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="846218741451901" type="heroi">
+                            <param id="0" name="Control">2</param>
+                        </action>
                         <action id="-16" name="Wait" sid="548825649931226" type="System">
                             <param id="0" name="Seconds">0.5</param>
                         </action>
@@ -348,6 +351,9 @@
                     <param id="0" name="Object">inimigo3</param>
                 </condition>
                 <condition behavior="Flash" id="0" inverted="1" name="Is flashing" sid="921697946686600" type="animation" />
+                <condition id="2" name="Is playing" sid="186162571854973" type="inimigo3">
+                    <param id="0" name="Animation">&quot;andando&quot;</param>
+                </condition>
             </conditions>
             <actions />
             <sub-events>
@@ -392,9 +398,6 @@
                         <action id="0" name="Call function" sid="448930444964403" type="Function">
                             <param id="0" name="Name">&quot;perde_vida&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
-                        </action>
-                        <action id="-1" name="Set X" sid="778568103027503" type="heroi">
-                            <param id="0" name="X">heroi.X-60</param>
                         </action>
                     </actions>
                 </event-block>
@@ -456,9 +459,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="788128613083127" type="heroi">
-                            <param id="0" name="Control">2</param>
-                        </action>
                         <action behavior="Platform" id="11" name="Set enabled" sid="640291105677732" type="inimigo4">
                             <param id="0" name="State">0</param>
                         </action>
@@ -470,6 +470,9 @@
                             <param id="0" name="&apos;On&apos; time">0.1</param>
                             <param id="1" name="&apos;Off&apos; time">0.1</param>
                             <param id="2" name="Duration">0.5</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="788128613083127" type="heroi">
+                            <param id="0" name="Control">2</param>
                         </action>
                         <action id="-16" name="Wait" sid="176739071174130" type="System">
                             <param id="0" name="Seconds">0.5</param>
@@ -485,9 +488,6 @@
                         <action id="0" name="Call function" sid="223974131373629" type="Function">
                             <param id="0" name="Name">&quot;perde_vida&quot;</param>
                             <param id="1" name="Parameter {n}"></param>
-                        </action>
-                        <action id="-1" name="Set X" sid="385872630637179" type="heroi">
-                            <param id="0" name="X">heroi.X-60</param>
                         </action>
                     </actions>
                 </event-block>
@@ -566,6 +566,31 @@
                     <param id="0" name="Variable">checkpoint</param>
                     <param id="1" name="Value">1</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-block sid="829401773762733">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="137627631816293" type="heroi">
+                    <param id="0" name="Object">estrela</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Flash" id="0" name="Flash" sid="864663777192826" type="animation">
+                    <param id="0" name="&apos;On&apos; time">0.1</param>
+                    <param id="1" name="&apos;Off&apos; time">0.1</param>
+                    <param id="2" name="Duration">5.0</param>
+                </action>
+                <action id="0" name="Play" sid="850102356205173" type="Audio">
+                    <param id="0" name="Audio file">star</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Destroy" sid="606065479788933" type="estrela" />
+                <action id="-16" name="Wait" sid="861748841967029" type="System">
+                    <param id="0" name="Seconds">5.0</param>
+                </action>
+                <action id="33" name="Stop all" sid="458884473558177" type="Audio" />
             </actions>
         </event-block>
         <event-block sid="717614076162614">

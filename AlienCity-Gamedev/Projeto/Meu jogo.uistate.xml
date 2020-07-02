@@ -56,5 +56,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/chave/" />
         <folder expanded="1" path="animation-folder/cofre/" />
         <folder expanded="1" path="animation-folder/chave_hud/" />
+        <folder expanded="1" path="animation-folder/estrela/" />
     </folders-expanded>
 </c2uistate>
