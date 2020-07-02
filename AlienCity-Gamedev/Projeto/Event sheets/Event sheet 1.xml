@@ -219,6 +219,9 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="598610028396104" type="heroi">
+                            <param id="0" name="Control">2</param>
+                        </action>
                         <action id="5" name="Set frame" sid="493885111975994" type="inimigo1">
                             <param id="0" name="Frame number">1</param>
                         </action>

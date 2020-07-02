@@ -193,6 +193,9 @@
                 <behavior-type name="Solid" sid="790073073425453">
                     <behavior id="solid" />
                 </behavior-type>
+                <behavior-type name="Jumpthru" sid="910491741608277">
+                    <behavior id="jumpthru" />
+                </behavior-type>
             </behaviors>
             <texture original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\grassHalfMid.png" />
         </object-type>
@@ -402,14 +405,6 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="425367857195159" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Sprite" sid="208802599456560">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="386255668041696" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
