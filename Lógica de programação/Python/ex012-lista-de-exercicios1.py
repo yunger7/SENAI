@@ -126,4 +126,29 @@
 
 # ==================================
 
-# 2.19
+# # 2.19
+
+# def alvo(x, y):
+#     if (x <= 10 and y <= 10) and (x >= -10 and y >= -10):
+#         print('acertou!')
+#     else:
+#         print('parede!')
+
+# alvo(11, 0)
+
+# ==================================
+
+# # 2.20
+
+# import math
+
+# def altura(comp, ang):
+#     rad = (math.pi * ang) / 180
+#     altura = math.sin(rad) * comp
+#     return altura
+
+# print(altura(16, 75))
+
+# ==================================
+
+# 2.21
