@@ -14,6 +14,7 @@
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
@@ -724,6 +725,92 @@
         </object-type>
         <object-type name="Audio" sid="367217631258521">
             <plugin id="Audio" />
+        </object-type>
+        <object-type name="number" sid="861028714562965">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="534826251595144" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\HUD\hud_0.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.513514" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\HUD\hud_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\HUD\hud_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\HUD\hud_3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="status" sid="775840948284906">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="881585892793433" speed="5">
+                    <frame duration="1" hotspotX="0.510638" hotspotY="0.510638" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\HUD\hud_p1.png">
+                        <collision-poly>
+                            <point x="0.148936" y="0.148936" />
+                            <point x="0.489362" y="0" />
+                            <point x="0.851064" y="0.148936" />
+                            <point x="1" y="0.489362" />
+                            <point x="0.851064" y="0.851064" />
+                            <point x="0.489362" y="1" />
+                            <point x="0.148936" y="0.851064" />
+                            <point x="0" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="coin_hud" sid="198843757740634">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="538451096471565" speed="5">
+                    <frame duration="1" hotspotX="0.510638" hotspotY="0.510638" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\HUD\hud_coins.png">
+                        <collision-poly>
+                            <point x="0.148936" y="0.148936" />
+                            <point x="0.489362" y="0" />
+                            <point x="0.851064" y="0.148936" />
+                            <point x="1" y="0.489362" />
+                            <point x="0.851064" y="0.851064" />
+                            <point x="0.489362" y="1" />
+                            <point x="0.148936" y="0.851064" />
+                            <point x="0" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="placar" sid="880359146875095">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="joia" sid="359536224617235">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="475404347457815" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\HUD\hud_gem_yellow.png">
+                        <collision-poly>
+                            <point x="0.108696" y="0.138889" />
+                            <point x="0.5" y="0" />
+                            <point x="0.891304" y="0.138889" />
+                            <point x="1" y="0.5" />
+                            <point x="0.826087" y="0.777778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.173913" y="0.777778" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="caixa_joia" sid="384309671152537">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="741468344587765">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="111157413288086" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.971429" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\boxItem.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.971429" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\boxItem_disabled.png" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

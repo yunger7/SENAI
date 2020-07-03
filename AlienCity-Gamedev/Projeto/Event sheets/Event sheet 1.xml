@@ -3,9 +3,11 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="moeda" sid="580993803073022" static="0" type="number">0</variable>
+        <variable constant="0" name="vida" sid="381347123876713" static="0" type="number">3</variable>
         <variable constant="0" name="chave" sid="986216848131126" static="0" type="number">0</variable>
         <variable constant="0" name="checkpoint" sid="706581703919416" static="0" type="number">0</variable>
-        <variable constant="0" name="life" sid="441630704632137" static="0" type="number">3</variable>
+        <variable constant="0" name="coracao" sid="441630704632137" static="0" type="number">3</variable>
         <event-block sid="713381774298430">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="808402510749614" type="System" />
@@ -20,7 +22,7 @@
                     <param id="1" name="Mode">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="954628594542683" type="System">
-                    <param id="0" name="Variable">life</param>
+                    <param id="0" name="Variable">coracao</param>
                     <param id="1" name="Value">3</param>
                 </action>
                 <action id="5" name="Set frame" sid="923820199627657" type="life">
@@ -29,6 +31,9 @@
                 <action behavior="Pin" id="0" name="Pin to object" sid="240571480427350" type="respawnfogo">
                     <param id="0" name="Pin to">inimigo5</param>
                     <param id="1" name="Mode">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="131617387028954" type="number">
+                    <param id="0" name="Frame number">vida</param>
                 </action>
             </actions>
             <sub-events>
@@ -55,18 +60,46 @@
                     <param id="0" name="Interval (seconds)">1.0</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="0" name="Set text" sid="182051152832454" type="placar">
+                    <param id="0" name="Text">moeda</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block sid="904145311459632">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="971669440029594" type="System">
-                            <param id="0" name="Variable">life</param>
+                            <param id="0" name="Variable">coracao</param>
                             <param id="1" name="Comparison">3</param>
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-26" name="Restart layout" sid="342252786431220" type="System" />
+                        <action id="-11" name="Subtract from" sid="734934406042201" type="System">
+                            <param id="0" name="Variable">vida</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="772524930896494">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="824351295259802" type="System">
+                            <param id="0" name="Variable">vida</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="244476383480622" type="System" />
+                        <action id="-9" name="Set value" sid="803714392985677" type="System">
+                            <param id="0" name="Variable">checkpoint</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="923168379817178" type="System">
+                            <param id="0" name="Variable">vida</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -79,11 +112,11 @@
             </conditions>
             <actions>
                 <action id="-11" name="Subtract from" sid="645672189935345" type="System">
-                    <param id="0" name="Variable">life</param>
+                    <param id="0" name="Variable">coracao</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="5" name="Set frame" sid="134292213564501" type="life">
-                    <param id="0" name="Frame number">life</param>
+                    <param id="0" name="Frame number">coracao</param>
                 </action>
                 <action behavior="Flash" id="0" name="Flash" sid="285120468787656" type="animation">
                     <param id="0" name="&apos;On&apos; time">0.1</param>
@@ -543,11 +576,11 @@
                     <param id="0" name="Seconds">0.5</param>
                 </action>
                 <action id="-11" name="Subtract from" sid="829845152735120" type="System">
-                    <param id="0" name="Variable">life</param>
+                    <param id="0" name="Variable">coracao</param>
                     <param id="1" name="Value">1</param>
                 </action>
                 <action id="5" name="Set frame" sid="618032601749899" type="life">
-                    <param id="0" name="Frame number">life</param>
+                    <param id="0" name="Frame number">coracao</param>
                 </action>
             </actions>
         </event-block>
@@ -664,6 +697,83 @@
                         <action id="4" name="Set animation" sid="396535187009781" type="porta_top">
                             <param id="0" name="Animation">&quot;aberto&quot;</param>
                             <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="310866452060858" type="chave_hud">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="512926200583903">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="241128873885264" type="heroi">
+                    <param id="0" name="Object">coin_gold</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="528378576973627" type="System">
+                    <param id="0" name="Variable">moeda</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="-9" name="Destroy" sid="763061973557716" type="coin_gold" />
+            </actions>
+        </event-block>
+        <event-block sid="716397192615801">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="866359780158692" type="heroi">
+                    <param id="0" name="Object">caixa_joia</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="281551976667016" type="caixa_joia">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="312863403423006">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="721466969339571" type="heroi">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">caixa_joia.Y</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="870463563176077" type="System">
+                            <param id="0" name="Object to create">joia</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">caixa_joia.X</param>
+                            <param id="3" name="Y">caixa_joia.Y-90</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="145175235211445" type="caixa_joia">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="683850668305327">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="225590714363790" type="heroi">
+                    <param id="0" name="Object">joia</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="305641234592939" type="joia" />
+            </actions>
+            <sub-events>
+                <event-block sid="572571446405548">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="378672018193187" type="System">
+                            <param id="0" name="Variable">vida</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="841907445801901" type="System">
+                            <param id="0" name="Variable">vida</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
