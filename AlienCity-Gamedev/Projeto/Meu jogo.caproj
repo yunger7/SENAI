@@ -843,9 +843,12 @@
             </properties>
         </global-instance>
     </global-instances>
-    <sounds-folder />
-    <music-folder>
+    <sounds-folder>
         <file name="star.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="Monkeys Spinning Monkeys.m4a" />
+        <file name="background_music.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">

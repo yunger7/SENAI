@@ -37,6 +37,13 @@
                         <action id="5" name="Set frame" sid="131617387028954" type="number">
                             <param id="0" name="Frame number">vida</param>
                         </action>
+                        <action id="7" name="Play (by name)" sid="990692337776579" type="Audio">
+                            <param id="0" name="Folder">1</param>
+                            <param id="1" name="Audio file name">&quot;background_music&quot;</param>
+                            <param id="3" name="Loop">1</param>
+                            <param id="4" name="Volume">-15</param>
+                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="652706493244589">
@@ -243,7 +250,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="316844094365487" title="Enemys">
+        <event-group description="" sid="316844094365487" title="Enemies">
             <sub-events>
                 <event-block sid="391261694453852">
                     <conditions>
@@ -631,13 +638,15 @@
                             <param id="0" name="Audio file">star</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">-15</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="1" name="Tag (optional)">&quot;star&quot;</param>
                         </action>
                         <action id="-9" name="Destroy" sid="606065479788933" type="estrela" />
                         <action id="-16" name="Wait" sid="861748841967029" type="System">
                             <param id="0" name="Seconds">5.0</param>
                         </action>
-                        <action id="33" name="Stop all" sid="458884473558177" type="Audio" />
+                        <action id="6" name="Stop" sid="458884473558177" type="Audio">
+                            <param id="0" name="Tag">&quot;star&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="717614076162614">
