@@ -23,7 +23,11 @@
                             <param id="0" name="Pin to">heroi</param>
                             <param id="1" name="Mode">0</param>
                         </action>
-                        <action id="-9" name="Set value" sid="954628594542683" type="System">
+                        <action id="-9" name="Set value" sid="827380248720756" type="System">
+                            <param id="0" name="Variable">moeda</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="783810199849387" type="System">
                             <param id="0" name="Variable">coracao</param>
                             <param id="1" name="Value">3</param>
                         </action>
@@ -79,6 +83,9 @@
                         <action id="0" name="Set text" sid="182051152832454" type="placar">
                             <param id="0" name="Text">moeda</param>
                         </action>
+                        <action id="5" name="Set frame" sid="644455799405937" type="number">
+                            <param id="0" name="Frame number">vida</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="904145311459632">
@@ -115,6 +122,9 @@
                                     <param id="1" name="Value">3</param>
                                 </action>
                                 <action disabled="1" id="-26" name="Restart layout" sid="244476383480622" type="System" />
+                                <action id="-13" name="Set time scale" sid="246761760706658" type="System">
+                                    <param id="0" name="Time scale">0</param>
+                                </action>
                             </actions>
                             <sub-events>
                                 <event-block sid="862809318592986">
@@ -125,9 +135,15 @@
                                         </condition>
                                     </conditions>
                                     <actions>
-                                        <action id="-3" name="Set position" sid="180403925306225" type="game_over">
+                                        <action id="-1" name="Set X" sid="556697847095455" type="game_over">
                                             <param id="0" name="X">640</param>
-                                            <param id="1" name="Y">game_over.Y+30</param>
+                                        </action>
+                                        <action id="-2" name="Set Y" sid="402841132562928" type="game_over">
+                                            <param id="0" name="Y">game_over.Y+30</param>
+                                        </action>
+                                        <action id="-12" name="Set group active" sid="572600095198220" type="System">
+                                            <param id="0" name="Group name">&quot;Controls &amp; Animations&quot;</param>
+                                            <param id="1" name="State">0</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -137,7 +153,7 @@
                             <conditions>
                                 <condition id="-2" name="Compare Y" sid="626005225318309" type="heroi">
                                     <param id="0" name="Comparison">5</param>
-                                    <param id="1" name="Y co-ordinate">720</param>
+                                    <param id="1" name="Y co-ordinate">950</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -191,6 +207,58 @@
         </event-group>
         <event-group description="" sid="271522210041642" title="Controls &amp; Animations">
             <sub-events>
+                <event-block sid="453020579402409">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="448606592640243" type="Touch">
+                            <param id="0" name="Object">Start</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="443720654744485" type="System">
+                            <param id="0" name="Layout">Jogo</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="808899221167748" type="System">
+                            <param id="0" name="Group name">&quot;Controls &amp; Animations&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="648085582387785">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="737184661652268" type="Touch">
+                            <param id="0" name="Object">button_yes</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-26" name="Restart layout" sid="688640739079451" type="System" />
+                        <action id="-13" name="Set time scale" sid="189941915375239" type="System">
+                            <param id="0" name="Time scale">1.0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="354199784037738" type="System">
+                            <param id="0" name="Variable">vida</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="626328423007606">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="311557706887257" type="Touch">
+                            <param id="0" name="Object">button_no</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="234313720918682" type="System">
+                            <param id="0" name="Layout">Menu</param>
+                        </action>
+                        <action id="-13" name="Set time scale" sid="751544395671607" type="System">
+                            <param id="0" name="Time scale">1.0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="546072037716735" type="System">
+                            <param id="0" name="Variable">vida</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="255455133241654">
                     <conditions>
                         <condition id="3" name="On touched object" sid="119557241077348" type="Touch">
@@ -918,37 +986,5 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="453020579402409">
-            <conditions>
-                <condition id="3" name="On touched object" sid="448606592640243" type="Touch">
-                    <param id="0" name="Object">Start</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="443720654744485" type="System">
-                    <param id="0" name="Layout">Jogo</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="648085582387785">
-            <conditions>
-                <condition id="3" name="On touched object" sid="737184661652268" type="Touch">
-                    <param id="0" name="Object">button_yes</param>
-                </condition>
-            </conditions>
-            <actions />
-        </event-block>
-        <event-block sid="626328423007606">
-            <conditions>
-                <condition id="3" name="On touched object" sid="311557706887257" type="Touch">
-                    <param id="0" name="Object">button_no</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="234313720918682" type="System">
-                    <param id="0" name="Layout">Menu</param>
-                </action>
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>
