@@ -28,21 +28,29 @@
                             <param id="1" name="Value">3</param>
                         </action>
                         <action id="5" name="Set frame" sid="923820199627657" type="life">
-                            <param id="0" name="Frame number">3</param>
+                            <param id="0" name="Frame number">coracao</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="131617387028954" type="number">
+                            <param id="0" name="Frame number">vida</param>
                         </action>
                         <action behavior="Pin" id="0" name="Pin to object" sid="240571480427350" type="respawnfogo">
                             <param id="0" name="Pin to">inimigo5</param>
                             <param id="1" name="Mode">0</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="131617387028954" type="number">
-                            <param id="0" name="Frame number">vida</param>
                         </action>
                         <action id="7" name="Play (by name)" sid="990692337776579" type="Audio">
                             <param id="0" name="Folder">1</param>
                             <param id="1" name="Audio file name">&quot;background_music&quot;</param>
                             <param id="3" name="Loop">1</param>
                             <param id="4" name="Volume">-15</param>
-                            <param id="2" name="Tag (optional)">&quot;&quot;</param>
+                            <param id="2" name="Tag (optional)">&quot;background&quot;</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="660082417056559" type="button_yes">
+                            <param id="0" name="Pin to">game_over</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="895096882118157" type="button_no">
+                            <param id="0" name="Pin to">game_over</param>
+                            <param id="1" name="Mode">0</param>
                         </action>
                     </actions>
                     <sub-events>
@@ -65,9 +73,7 @@
                 </event-block>
                 <event-block sid="501549867724297">
                     <conditions>
-                        <condition id="-6" name="Every X seconds" sid="382314657265916" type="System">
-                            <param id="0" name="Interval (seconds)">1.0</param>
-                        </condition>
+                        <condition id="-1" name="Every tick" sid="382314657265916" type="System" />
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="182051152832454" type="placar">
@@ -100,23 +106,70 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-26" name="Restart layout" sid="244476383480622" type="System" />
-                                <action id="-9" name="Set value" sid="803714392985677" type="System">
+                                <action disabled="1" id="-9" name="Set value" sid="803714392985677" type="System">
                                     <param id="0" name="Variable">checkpoint</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
-                                <action id="-9" name="Set value" sid="923168379817178" type="System">
+                                <action disabled="1" id="-9" name="Set value" sid="923168379817178" type="System">
                                     <param id="0" name="Variable">vida</param>
                                     <param id="1" name="Value">3</param>
+                                </action>
+                                <action disabled="1" id="-26" name="Restart layout" sid="244476383480622" type="System" />
+                            </actions>
+                            <sub-events>
+                                <event-block sid="862809318592986">
+                                    <conditions>
+                                        <condition id="-2" name="Compare Y" sid="703621709921140" type="game_over">
+                                            <param id="0" name="Comparison">2</param>
+                                            <param id="1" name="Y co-ordinate">330</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="180403925306225" type="game_over">
+                                            <param id="0" name="X">640</param>
+                                            <param id="1" name="Y">game_over.Y+30</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="733244034343172">
+                            <conditions>
+                                <condition id="-2" name="Compare Y" sid="626005225318309" type="heroi">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="Y co-ordinate">720</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="230774433259156" type="Function">
+                                    <param id="0" name="Name">&quot;perde_vida&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
                         </event-block>
                     </sub-events>
                 </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="613280098892976" title="Functions">
+            <sub-events>
+                <event-block sid="988898317131597">
+                    <conditions>
+                        <condition id="0" name="On function" sid="951359635300946" type="Function">
+                            <param id="0" name="Name">&quot;perde_vida&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="120909133156973" type="System">
+                            <param id="0" name="Variable">coracao</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="811870434199863">
                     <conditions>
                         <condition id="0" name="On function" sid="747740869337858" type="Function">
-                            <param id="0" name="Name">&quot;perde_vida&quot;</param>
+                            <param id="0" name="Name">&quot;perde_coracao&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -138,6 +191,52 @@
         </event-group>
         <event-group description="" sid="271522210041642" title="Controls &amp; Animations">
             <sub-events>
+                <event-block sid="255455133241654">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="119557241077348" type="Touch">
+                            <param id="0" name="Object">sound</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="625581668605231" type="sound">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set muted" sid="987003263250315" type="Audio">
+                            <param id="0" name="Tag">&quot;background&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="967871489367951" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="427750700732668" type="sound">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="740620727571031">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="929210492140731" type="Touch">
+                            <param id="0" name="Object">sound</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="655934611976904" type="sound">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set muted" sid="520017182949474" type="Audio">
+                            <param id="0" name="Tag">&quot;background&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="195784585277868" type="System">
+                            <param id="0" name="Seconds">0.3</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="365857510388232" type="sound">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="120274217873129">
                     <conditions>
                         <condition behavior="Platform" id="0" name="Is moving" sid="266540090244066" type="heroi" />
@@ -292,7 +391,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Call function" sid="822644473416723" type="Function">
-                                    <param id="0" name="Name">&quot;perde_vida&quot;</param>
+                                    <param id="0" name="Name">&quot;perde_coracao&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>
                                 <action id="-1" name="Set X" sid="891967771047346" type="heroi">
@@ -378,7 +477,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Call function" sid="379312357439896" type="Function">
-                                    <param id="0" name="Name">&quot;perde_vida&quot;</param>
+                                    <param id="0" name="Name">&quot;perde_coracao&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
@@ -446,7 +545,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Call function" sid="448930444964403" type="Function">
-                                    <param id="0" name="Name">&quot;perde_vida&quot;</param>
+                                    <param id="0" name="Name">&quot;perde_coracao&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
@@ -536,7 +635,7 @@
                             </conditions>
                             <actions>
                                 <action id="0" name="Call function" sid="223974131373629" type="Function">
-                                    <param id="0" name="Name">&quot;perde_vida&quot;</param>
+                                    <param id="0" name="Name">&quot;perde_coracao&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>
                             </actions>
@@ -634,6 +733,10 @@
                             <param id="1" name="&apos;Off&apos; time">0.1</param>
                             <param id="2" name="Duration">5.0</param>
                         </action>
+                        <action id="22" name="Set paused" sid="377594481968436" type="Audio">
+                            <param id="0" name="Tag">&quot;background&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
                         <action id="0" name="Play" sid="850102356205173" type="Audio">
                             <param id="0" name="Audio file">star</param>
                             <param id="2" name="Loop">0</param>
@@ -646,6 +749,13 @@
                         </action>
                         <action id="6" name="Stop" sid="458884473558177" type="Audio">
                             <param id="0" name="Tag">&quot;star&quot;</param>
+                        </action>
+                        <action id="7" name="Play (by name)" sid="872615632146629" type="Audio">
+                            <param id="0" name="Folder">1</param>
+                            <param id="1" name="Audio file name">&quot;background_music&quot;</param>
+                            <param id="3" name="Loop">1</param>
+                            <param id="4" name="Volume">-15</param>
+                            <param id="2" name="Tag (optional)">&quot;background&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -686,7 +796,7 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Set position" sid="557992692209243" type="chave_hud">
-                            <param id="0" name="X">1200</param>
+                            <param id="0" name="X">1000</param>
                             <param id="1" name="Y">50</param>
                         </action>
                         <action id="-9" name="Destroy" sid="154328778352458" type="chave" />
@@ -760,6 +870,10 @@
                                     <param id="0" name="Comparison">4</param>
                                     <param id="1" name="Y co-ordinate">caixa_joia.Y</param>
                                 </condition>
+                                <condition id="-1" name="Compare X" sid="663774389501589" type="heroi">
+                                    <param id="0" name="Comparison">5</param>
+                                    <param id="1" name="X co-ordinate">caixa_joia.X-40</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-3" name="Create object" sid="870463563176077" type="System">
@@ -804,5 +918,37 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="453020579402409">
+            <conditions>
+                <condition id="3" name="On touched object" sid="448606592640243" type="Touch">
+                    <param id="0" name="Object">Start</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="443720654744485" type="System">
+                    <param id="0" name="Layout">Jogo</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="648085582387785">
+            <conditions>
+                <condition id="3" name="On touched object" sid="737184661652268" type="Touch">
+                    <param id="0" name="Object">button_yes</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="626328423007606">
+            <conditions>
+                <condition id="3" name="On touched object" sid="311557706887257" type="Touch">
+                    <param id="0" name="Object">button_no</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="234313720918682" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
