@@ -21,6 +21,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
@@ -367,6 +368,9 @@
             <behaviors>
                 <behavior-type name="Bullet" sid="159875741616971">
                     <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="509442724141013">
+                    <behavior id="Physics" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
@@ -848,6 +852,67 @@
                             <point x="0.0144928" y="0.492958" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="agua_bottom" sid="791682174860988">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Sine" sid="758041077537600">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\liquidWater.png" />
+        </object-type>
+        <object-type name="agua_top" sid="121517839668323">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Sine" sid="559037589167143">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\liquidWaterTop.png" />
+        </object-type>
+        <object-type name="lava_bottom" sid="935861848181866">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="494013714261575" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\liquidLava.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lava_top" sid="384860300618859">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\liquidLavaTop.png" />
+        </object-type>
+        <object-type name="peixe" sid="561390786916334">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="637231616773824">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="674214166234273" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\fishSwim1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511628" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\fishSwim2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="respawnfogo2" sid="960695866318727">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="956905681436789" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mola" sid="573019240765532">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="856103890823874" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\springboardUp.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\springboardDown.png" />
                 </animation>
             </animation-folder>
         </object-type>
