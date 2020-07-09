@@ -11,8 +11,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Menu</layout>
-        <layout active="1" order="1">Jogo</layout>
-        <event-sheet order="2">Event sheet 1</event-sheet>
+        <layout order="1">Jogo</layout>
+        <event-sheet active="1" order="2">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -75,5 +75,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/destroy_comeco/" />
         <folder expanded="1" path="animation-folder/destroy_final/" />
         <folder expanded="1" path="animation-folder/destroy_fogo/" />
+        <folder expanded="1" path="animation-folder/lava_fogo/" />
     </folders-expanded>
 </c2uistate>

@@ -144,7 +144,7 @@
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>
-                                <speed>10</speed>
+                                <speed>20</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
                                 <bounce-off-solids>No</bounce-off-solids>
@@ -305,8 +305,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2338</x>
-                        <y>409</y>
+                        <x>2335</x>
+                        <y>427</y>
                         <z>0</z>
                         <width>48</width>
                         <height>146</height>
@@ -842,26 +842,12 @@
                                 <initial-state>Disabled</initial-state>
                             </properties>
                         </behavior-instance>
-                        <behavior-instance type="Physics">
-                            <properties>
-                                <immovable>No</immovable>
-                                <collision-mask>Use collision polygon</collision-mask>
-                                <prevent-rotation>No</prevent-rotation>
-                                <density>1</density>
-                                <friction>0.5</friction>
-                                <elasticity>0.2</elasticity>
-                                <linear-damping>0</linear-damping>
-                                <angular-damping>0.01</angular-damping>
-                                <bullet>No</bullet>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2392</x>
-                        <y>808</y>
+                        <x>2345</x>
+                        <y>800</y>
                         <z>0</z>
                         <width>24</width>
                         <height>26</height>
@@ -886,7 +872,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>2336</x>
-                        <y>372</y>
+                        <y>385</y>
                         <z>0</z>
                         <width>12.032730103</width>
                         <height>12.032730103</height>
@@ -1301,8 +1287,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>113</x>
-                        <y>537</y>
+                        <x>2163</x>
+                        <y>425</y>
                         <z>0</z>
                         <width>66</width>
                         <height>92</height>
@@ -1681,10 +1667,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>-100</x>
-                        <y>373.5</y>
+                        <y>363</y>
                         <z>0</z>
                         <width>134</width>
-                        <height>1066</height>
+                        <height>1297</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -1703,10 +1689,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>5170</x>
-                        <y>344</y>
+                        <y>382.5</y>
                         <z>0</z>
                         <width>157</width>
-                        <height>1141</height>
+                        <height>1400</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -2337,6 +2323,54 @@
                         <depth>0</depth>
                         <hotspotX>0.857142866</hotspotX>
                         <hotspotY>0.171428576</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="lava_fogo" uid="101">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>No</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Physics">
+                            <properties>
+                                <immovable>No</immovable>
+                                <collision-mask>Use collision polygon</collision-mask>
+                                <prevent-rotation>No</prevent-rotation>
+                                <density>1</density>
+                                <friction>0.5</friction>
+                                <elasticity>0.2</elasticity>
+                                <linear-damping>0</linear-damping>
+                                <angular-damping>0.01</angular-damping>
+                                <bullet>No</bullet>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2524</x>
+                        <y>807</y>
+                        <z>0</z>
+                        <width>24</width>
+                        <height>26</height>
+                        <depth>0</depth>
+                        <hotspotX>0.541666687</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
