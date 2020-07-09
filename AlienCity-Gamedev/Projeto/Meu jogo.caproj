@@ -883,7 +883,7 @@
         </object-type>
         <object-type name="lava_top" sid="384860300618859">
             <plugin id="TiledBg" />
-            <texture original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\liquidLavaTop.png" />
+            <texture original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\liquidLavaTop_mid.png" />
         </object-type>
         <object-type name="peixe" sid="561390786916334">
             <plugin id="Sprite" />

@@ -243,218 +243,244 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <event-block sid="523735747422100">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="752340968436890" type="System">
+                            <param id="0" name="Interval (seconds)">random(1,20)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="640025364375786" type="nuvem">
+                            <param id="0" name="Frame number">random(1,3)</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="607235969788647" type="System">
+                            <param id="0" name="Object to create">nuvem</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">-30</param>
+                            <param id="3" name="Y">random(0,300)</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="271522210041642" title="Controls &amp; Animations">
             <sub-events>
-                <event-block sid="453020579402409">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="448606592640243" type="Touch">
-                            <param id="0" name="Object">Start</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-2" name="Go to layout" sid="443720654744485" type="System">
-                            <param id="0" name="Layout">Jogo</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="808899221167748" type="System">
-                            <param id="0" name="Group name">&quot;Controls &amp; Animations&quot;</param>
-                            <param id="1" name="State">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="648085582387785">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="737184661652268" type="Touch">
-                            <param id="0" name="Object">button_yes</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-26" name="Restart layout" sid="688640739079451" type="System" />
-                        <action id="-13" name="Set time scale" sid="189941915375239" type="System">
-                            <param id="0" name="Time scale">1.0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="354199784037738" type="System">
-                            <param id="0" name="Variable">vida</param>
-                            <param id="1" name="Value">3</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="626328423007606">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="311557706887257" type="Touch">
-                            <param id="0" name="Object">button_no</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-2" name="Go to layout" sid="234313720918682" type="System">
-                            <param id="0" name="Layout">Menu</param>
-                        </action>
-                        <action id="-13" name="Set time scale" sid="751544395671607" type="System">
-                            <param id="0" name="Time scale">1.0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="546072037716735" type="System">
-                            <param id="0" name="Variable">vida</param>
-                            <param id="1" name="Value">3</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="255455133241654">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="119557241077348" type="Touch">
-                            <param id="0" name="Object">sound</param>
-                        </condition>
-                        <condition id="3" name="Compare frame" sid="625581668605231" type="sound">
-                            <param id="0" name="Comparison">0</param>
-                            <param id="1" name="Number">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="2" name="Set muted" sid="987003263250315" type="Audio">
-                            <param id="0" name="Tag">&quot;background&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="967871489367951" type="System">
-                            <param id="0" name="Seconds">0.3</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="427750700732668" type="sound">
-                            <param id="0" name="Frame number">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="740620727571031">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="929210492140731" type="Touch">
-                            <param id="0" name="Object">sound</param>
-                        </condition>
-                        <condition id="3" name="Compare frame" sid="655934611976904" type="sound">
-                            <param id="0" name="Comparison">0</param>
-                            <param id="1" name="Number">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="2" name="Set muted" sid="520017182949474" type="Audio">
-                            <param id="0" name="Tag">&quot;background&quot;</param>
-                            <param id="1" name="State">1</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="195784585277868" type="System">
-                            <param id="0" name="Seconds">0.3</param>
-                        </action>
-                        <action id="5" name="Set frame" sid="365857510388232" type="sound">
-                            <param id="0" name="Frame number">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="120274217873129">
-                    <conditions>
-                        <condition behavior="Platform" id="0" name="Is moving" sid="266540090244066" type="heroi" />
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="363135032491095" type="animation">
-                            <param id="0" name="Animation">&quot;andando&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="487859726982989">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="863806564276959" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="993334063448144" type="animation">
-                            <param id="0" name="Animation">&quot;parado&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="209894163186598">
-                    <conditions>
-                        <condition behavior="Platform" id="3" name="Is jumping" sid="331846735643351" type="heroi" />
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="393277044010596" type="animation">
-                            <param id="0" name="Animation">&quot;pulando&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="895477276307968">
-                    <conditions>
-                        <condition behavior="Platform" id="4" name="Is falling" sid="353956833452776" type="heroi" />
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" sid="666385766258693" type="animation">
-                            <param id="0" name="Animation">&quot;caindo&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="518470494474898">
-                    <conditions>
-                        <condition id="2" name="Key is down" sid="694648432884694" type="Keyboard">
-                            <param id="0" name="Key">39</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="7" name="Set mirrored" sid="570847471249034" type="animation">
-                            <param id="0" name="State">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="371081265101334">
-                    <conditions>
-                        <condition id="2" name="Key is down" sid="328829940413370" type="Keyboard">
-                            <param id="0" name="Key">37</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="7" name="Set mirrored" sid="714467333594898" type="animation">
-                            <param id="0" name="State">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="477176822885871">
-                    <conditions>
-                        <condition id="4" name="Is touching object" sid="554786536997804" type="Touch">
-                            <param id="0" name="Object">direito</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="122741281185094" type="heroi">
-                            <param id="0" name="Control">1</param>
-                        </action>
-                        <action id="7" name="Set mirrored" sid="965736683486441" type="animation">
-                            <param id="0" name="State">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="143314099611930">
-                    <conditions>
-                        <condition id="4" name="Is touching object" sid="719084733608298" type="Touch">
-                            <param id="0" name="Object">esquerdo</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="146327945465171" type="heroi">
-                            <param id="0" name="Control">0</param>
-                        </action>
-                        <action id="7" name="Set mirrored" sid="240952876626596" type="animation">
-                            <param id="0" name="State">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="923940815858982">
-                    <conditions>
-                        <condition id="4" name="Is touching object" sid="832373367374576" type="Touch">
-                            <param id="0" name="Object">pulo</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="7" name="Simulate control" sid="353918148783869" type="heroi">
-                            <param id="0" name="Control">2</param>
-                        </action>
-                    </actions>
-                </event-block>
+                <event-group description="" sid="602409034737586" title="Buttons">
+                    <sub-events>
+                        <event-block sid="453020579402409">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="448606592640243" type="Touch">
+                                    <param id="0" name="Object">Start</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="443720654744485" type="System">
+                                    <param id="0" name="Layout">Jogo</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="808899221167748" type="System">
+                                    <param id="0" name="Group name">&quot;Controls &amp; Animations&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="648085582387785">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="737184661652268" type="Touch">
+                                    <param id="0" name="Object">button_yes</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-26" name="Restart layout" sid="688640739079451" type="System" />
+                                <action id="-13" name="Set time scale" sid="189941915375239" type="System">
+                                    <param id="0" name="Time scale">1.0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="354199784037738" type="System">
+                                    <param id="0" name="Variable">vida</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="626328423007606">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="311557706887257" type="Touch">
+                                    <param id="0" name="Object">button_no</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="234313720918682" type="System">
+                                    <param id="0" name="Layout">Menu</param>
+                                </action>
+                                <action id="-13" name="Set time scale" sid="751544395671607" type="System">
+                                    <param id="0" name="Time scale">1.0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="546072037716735" type="System">
+                                    <param id="0" name="Variable">vida</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="255455133241654">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="119557241077348" type="Touch">
+                                    <param id="0" name="Object">sound</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="625581668605231" type="sound">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set muted" sid="987003263250315" type="Audio">
+                                    <param id="0" name="Tag">&quot;background&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="967871489367951" type="System">
+                                    <param id="0" name="Seconds">0.3</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="427750700732668" type="sound">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="740620727571031">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="929210492140731" type="Touch">
+                                    <param id="0" name="Object">sound</param>
+                                </condition>
+                                <condition id="3" name="Compare frame" sid="655934611976904" type="sound">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Number">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Set muted" sid="520017182949474" type="Audio">
+                                    <param id="0" name="Tag">&quot;background&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="195784585277868" type="System">
+                                    <param id="0" name="Seconds">0.3</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="365857510388232" type="sound">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="338469740917661" title="Movement">
+                    <sub-events>
+                        <event-block sid="120274217873129">
+                            <conditions>
+                                <condition behavior="Platform" id="0" name="Is moving" sid="266540090244066" type="heroi" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="363135032491095" type="animation">
+                                    <param id="0" name="Animation">&quot;andando&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="487859726982989">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="863806564276959" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="993334063448144" type="animation">
+                                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="209894163186598">
+                            <conditions>
+                                <condition behavior="Platform" id="3" name="Is jumping" sid="331846735643351" type="heroi" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="393277044010596" type="animation">
+                                    <param id="0" name="Animation">&quot;pulando&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="895477276307968">
+                            <conditions>
+                                <condition behavior="Platform" id="4" name="Is falling" sid="353956833452776" type="heroi" />
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" sid="666385766258693" type="animation">
+                                    <param id="0" name="Animation">&quot;caindo&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="518470494474898">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="694648432884694" type="Keyboard">
+                                    <param id="0" name="Key">39</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="570847471249034" type="animation">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="371081265101334">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="328829940413370" type="Keyboard">
+                                    <param id="0" name="Key">37</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Set mirrored" sid="714467333594898" type="animation">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="477176822885871">
+                            <conditions>
+                                <condition id="4" name="Is touching object" sid="554786536997804" type="Touch">
+                                    <param id="0" name="Object">direito</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="122741281185094" type="heroi">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="965736683486441" type="animation">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="143314099611930">
+                            <conditions>
+                                <condition id="4" name="Is touching object" sid="719084733608298" type="Touch">
+                                    <param id="0" name="Object">esquerdo</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="146327945465171" type="heroi">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                                <action id="7" name="Set mirrored" sid="240952876626596" type="animation">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="923940815858982">
+                            <conditions>
+                                <condition id="4" name="Is touching object" sid="832373367374576" type="Touch">
+                                    <param id="0" name="Object">pulo</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="7" name="Simulate control" sid="353918148783869" type="heroi">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
             </sub-events>
         </event-group>
         <event-group description="" sid="316844094365487" title="Enemies">
@@ -1097,23 +1123,5 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="523735747422100">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="752340968436890" type="System">
-                    <param id="0" name="Interval (seconds)">random(1,20)</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="640025364375786" type="nuvem">
-                    <param id="0" name="Frame number">random(1,3)</param>
-                </action>
-                <action id="-3" name="Create object" sid="607235969788647" type="System">
-                    <param id="0" name="Object to create">nuvem</param>
-                    <param id="1" name="Layer">0</param>
-                    <param id="2" name="X">-30</param>
-                    <param id="3" name="Y">random(0,300)</param>
-                </action>
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>
