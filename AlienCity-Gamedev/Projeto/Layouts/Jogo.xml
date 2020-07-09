@@ -13,10 +13,10 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="base" sid="817561581724879">
+        <layer name="background" sid="815317043988453">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
-            <transparent>0</transparent>
+            <transparent>1</transparent>
             <parallax>
                 <x>1</x>
                 <y>1</y>
@@ -49,6 +49,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="hill" uid="74">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>468</x>
+                        <y>445</y>
+                        <z>0</z>
+                        <width>107.996955872</width>
+                        <height>328.490753174</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.600000024</opacity>
+                    </world>
+                </instance>
                 <instance type="hill" uid="72">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -59,11 +81,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>239</x>
-                        <y>492</y>
+                        <x>237</x>
+                        <y>574</y>
                         <z>0</z>
-                        <width>93.094734192</width>
-                        <height>283.163146973</height>
+                        <width>107.996955872</width>
+                        <height>328.490753174</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -81,8 +103,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>347</x>
-                        <y>474</y>
+                        <x>353</x>
+                        <y>510</y>
                         <z>0</z>
                         <width>107.996955872</width>
                         <height>328.490753174</height>
@@ -93,7 +115,26 @@
                         <opacity>0.600000024</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite" uid="71">
+            </instances>
+            <effects />
+        </layer>
+        <layer name="base" sid="817561581724879">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="nuvem" uid="71">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -103,7 +144,7 @@
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>
-                                <speed>30</speed>
+                                <speed>10</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
                                 <bounce-off-solids>No</bounce-off-solids>
@@ -115,8 +156,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>678</x>
-                        <y>233</y>
+                        <x>213</x>
+                        <y>-123</y>
                         <z>0</z>
                         <width>128</width>
                         <height>71</height>
@@ -136,10 +177,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>2658</x>
-                        <y>615.558105469</y>
+                        <y>641.47845459</y>
                         <z>0</z>
                         <width>844</width>
-                        <height>68.441894531</height>
+                        <height>43.384643555</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -1062,8 +1103,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1907</x>
-                        <y>497</y>
+                        <x>1627</x>
+                        <y>407</y>
                         <z>0</z>
                         <width>62</width>
                         <height>38</height>
@@ -1617,8 +1658,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>798</x>
-                        <y>546</y>
+                        <x>2486.909912109</x>
+                        <y>423.474700928</y>
                         <z>0</z>
                         <width>70</width>
                         <height>70</height>
@@ -1644,6 +1685,72 @@
                         <z>0</z>
                         <width>18.973665237</width>
                         <height>18.973665237</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="destroy_comeco" uid="75">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-100</x>
+                        <y>373.5</y>
+                        <z>0</z>
+                        <width>134</width>
+                        <height>1066</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="destroy_final" uid="76">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5170</x>
+                        <y>344</y>
+                        <z>0</z>
+                        <width>157</width>
+                        <height>1141</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="destroy_fogo" uid="77">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3090</x>
+                        <y>798</y>
+                        <z>0</z>
+                        <width>828</width>
+                        <height>102</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
