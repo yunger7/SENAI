@@ -1057,6 +1057,34 @@
                         <action id="-9" name="Destroy" sid="763061973557716" type="coin_gold" />
                     </actions>
                 </event-block>
+                <event-block sid="741397580756030">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="823897962163932" type="heroi">
+                            <param id="0" name="Object">coin_bronze</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="278840525102588" type="System">
+                            <param id="0" name="Variable">moeda</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="735890717821302" type="coin_bronze" />
+                    </actions>
+                </event-block>
+                <event-block sid="501818376960693">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="285155983695698" type="heroi">
+                            <param id="0" name="Object">coin_silver</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="691246063152751" type="System">
+                            <param id="0" name="Variable">moeda</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="908222118008565" type="coin_silver" />
+                    </actions>
+                </event-block>
                 <event-block sid="716397192615801">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="866359780158692" type="heroi">
