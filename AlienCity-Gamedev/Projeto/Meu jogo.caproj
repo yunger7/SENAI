@@ -899,7 +899,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="respawnfogo2" sid="960695866318727">
+        <object-type name="respawnfogo1" sid="960695866318727">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="956905681436789" speed="5">
@@ -913,6 +913,42 @@
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="856103890823874" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\springboardUp.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\springboardDown.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="960500825088717">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="801274943915504">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="522211120197705" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\cloud1.png" />
+                    <frame duration="1" hotspotX="0.503876" hotspotY="0.507042" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\cloud2.png" />
+                    <frame duration="1" hotspotX="0.503876" hotspotY="0.507042" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\cloud3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="hill" sid="372478258461576">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="937467818440518" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\hill_largeAlt.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\hill_large.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="527769027613267">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="respawnfogo2" sid="572329181294039">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="459011742607188" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
