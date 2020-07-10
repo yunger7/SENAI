@@ -460,6 +460,9 @@
                                 <action id="7" name="Set mirrored" sid="965736683486441" type="animation">
                                     <param id="0" name="State">1</param>
                                 </action>
+                                <action id="-16" name="Set opacity" sid="317547127486711" type="direito">
+                                    <param id="0" name="Opacity">100</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="143314099611930">
@@ -475,6 +478,9 @@
                                 <action id="7" name="Set mirrored" sid="240952876626596" type="animation">
                                     <param id="0" name="State">0</param>
                                 </action>
+                                <action id="-16" name="Set opacity" sid="860732653459301" type="esquerdo">
+                                    <param id="0" name="Opacity">100</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="923940815858982">
@@ -486,6 +492,9 @@
                             <actions>
                                 <action behavior="Platform" id="7" name="Simulate control" sid="353918148783869" type="heroi">
                                     <param id="0" name="Control">2</param>
+                                </action>
+                                <action id="-16" name="Set opacity" sid="822439804131662" type="pulo">
+                                    <param id="0" name="Opacity">100</param>
                                 </action>
                             </actions>
                         </event-block>
