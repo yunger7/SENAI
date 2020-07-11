@@ -1017,6 +1017,14 @@
             <plugin id="Spritefont2" />
             <texture />
         </object-type>
+        <object-type name="SpriteFont3" sid="466836967407097">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="Parabens" sid="795005198989170">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1052,6 +1060,7 @@
     <sounds-folder>
         <file name="star.ogg" />
         <file name="confirmation_001.ogg" />
+        <file name="Super Mario coin sound.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="background_music.ogg" />

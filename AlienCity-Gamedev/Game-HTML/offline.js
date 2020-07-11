@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1594486860,
+	"version": 1594490000,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -77,6 +77,7 @@
 		"images/lava_fogo-sheet2.png",
 		"media/star.ogg",
 		"media/confirmation_001.ogg",
+		"media/super mario coin sound.ogg",
 		"media/background_music.ogg",
 		"icon-16.png",
 		"icon-32.png",

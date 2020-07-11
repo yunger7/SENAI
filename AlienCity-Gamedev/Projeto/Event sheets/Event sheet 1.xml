@@ -839,6 +839,31 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <event-block sid="791238602960093">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="928179283440551" type="heroi">
+                            <param id="0" name="Object">lava_fogo</param>
+                        </condition>
+                        <condition behavior="Flash" id="0" inverted="1" name="Is flashing" sid="248557191454056" type="animation" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Flash" id="0" name="Flash" sid="816468901446567" type="animation">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="696036612948496" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="321300624717014" type="System">
+                            <param id="0" name="Variable">coracao</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="802111585580305" type="life">
+                            <param id="0" name="Frame number">coracao</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="290330785899892">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="437603051859489" type="heroi">
@@ -918,6 +943,21 @@
         </event-group>
         <event-group description="" sid="949068298987575" title="Objects">
             <sub-events>
+                <event-block sid="728881823538481">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="142055687128446" type="heroi">
+                            <param id="0" name="Object">porta_bottom</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="846032309081294" type="porta_bottom">
+                            <param id="0" name="Animation">&quot;aberto&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="240678858426418" type="Parabens">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="412112403854097">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="236541958753910" type="heroi">
@@ -1091,6 +1131,12 @@
                             <param id="1" name="Value">10</param>
                         </action>
                         <action id="-9" name="Destroy" sid="763061973557716" type="coin_gold" />
+                        <action id="0" name="Play" sid="768479510401038" type="Audio">
+                            <param id="0" name="Audio file">Super Mario coin sound</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="741397580756030">
@@ -1105,6 +1151,12 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="-9" name="Destroy" sid="735890717821302" type="coin_bronze" />
+                        <action id="0" name="Play" sid="530117132736169" type="Audio">
+                            <param id="0" name="Audio file">Super Mario coin sound</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="501818376960693">
@@ -1119,6 +1171,12 @@
                             <param id="1" name="Value">5</param>
                         </action>
                         <action id="-9" name="Destroy" sid="908222118008565" type="coin_silver" />
+                        <action id="0" name="Play" sid="208919986664243" type="Audio">
+                            <param id="0" name="Audio file">Super Mario coin sound</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="716397192615801">
