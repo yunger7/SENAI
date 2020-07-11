@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Menu</layout>
+        <layout order="1">Jogo</layout>
+        <event-sheet active="1" order="2">Event sheet 1</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/heroi/" />
+        <folder expanded="1" path="animation-folder/animation/" />
+        <folder expanded="1" path="animation-folder/esquerdo/" />
+        <folder expanded="1" path="animation-folder/direito/" />
+        <folder expanded="1" path="animation-folder/pulo/" />
+        <folder expanded="1" path="animation-folder/plataforma_vertical/" />
+        <folder expanded="1" path="animation-folder/life/" />
+        <folder expanded="1" path="animation-folder/inimigo1/" />
+        <folder expanded="1" path="animation-folder/inimigo2/" />
+        <folder expanded="1" path="animation-folder/inimigo3/" />
+        <folder expanded="1" path="animation-folder/inimigo4/" />
+        <folder expanded="1" path="animation-folder/inimigo5/" />
+        <folder expanded="1" path="animation-folder/fogo/" />
+        <folder expanded="1" path="animation-folder/respawnfogo/" />
+        <folder expanded="1" path="animation-folder/plataforma_horizontal/" />
+        <folder expanded="1" path="animation-folder/flag/" />
+        <folder expanded="1" path="animation-folder/game_over/" />
+        <folder expanded="1" path="animation-folder/button_yes/" />
+        <folder expanded="1" path="animation-folder/button_no/" />
+        <folder expanded="1" path="animation-folder/coin_bronze/" />
+        <folder expanded="1" path="animation-folder/coin_silver/" />
+        <folder expanded="1" path="animation-folder/coin_gold/" />
+        <folder expanded="1" path="animation-folder/porta_bottom/" />
+        <folder expanded="1" path="animation-folder/porta_top/" />
+        <folder expanded="1" path="animation-folder/botao/" />
+        <folder expanded="1" path="animation-folder/chave/" />
+        <folder expanded="1" path="animation-folder/cofre/" />
+        <folder expanded="1" path="animation-folder/chave_hud/" />
+        <folder expanded="1" path="animation-folder/estrela/" />
+        <folder expanded="1" path="animation-folder/number/" />
+        <folder expanded="1" path="animation-folder/status/" />
+        <folder expanded="1" path="animation-folder/coin_hud/" />
+        <folder expanded="1" path="animation-folder/joia/" />
+        <folder expanded="1" path="animation-folder/caixa_joia/" />
+        <folder expanded="1" path="animation-folder/sound/" />
+        <folder expanded="1" path="animation-folder/Start/" />
+        <folder expanded="1" path="animation-folder/lava_bottom/" />
+        <folder expanded="1" path="animation-folder/peixe/" />
+        <folder expanded="1" path="animation-folder/respawnfogo1/" />
+        <folder expanded="1" path="animation-folder/mola/" />
+        <folder expanded="1" path="animation-folder/nuvem/" />
+        <folder expanded="1" path="animation-folder/hill/" />
+        <folder expanded="1" path="animation-folder/respawnfogo2/" />
+        <folder expanded="1" path="animation-folder/destroy_comeco/" />
+        <folder expanded="1" path="animation-folder/destroy_final/" />
+        <folder expanded="1" path="animation-folder/destroy_fogo/" />
+        <folder expanded="1" path="animation-folder/lava_fogo/" />
+    </folders-expanded>
+</c2uistate>

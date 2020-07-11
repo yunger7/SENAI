@@ -1,0 +1,1078 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Meu jogo</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1tep2i4wjhzfi</unique-id>
+    <saved-with-version>27700</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Menu</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Edge</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="heroi" sid="106288963215477">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="478210595809181">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="862392367181806">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="763984614506530" speed="5">
+                    <frame duration="1" hotspotX="0.492" hotspotY="0.992" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="animation" sid="741338399345150">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="193395300645070">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="756351943692758">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="parado" pingpong="0" repeatcount="0" repeatto="0" sid="552953744446672" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.956522" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_stand.png" />
+                </animation>
+                <animation framecount="11" loop="1" name="andando" pingpong="0" repeatcount="0" repeatto="0" sid="652102908220499" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.958763" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk01.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.958763" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk02.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.958763" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk03.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.958763" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk04.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.958763" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk05.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.958763" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk06.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.958763" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk07.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.958763" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk08.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.958763" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk09.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.958763" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk10.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.958763" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_walk\p1_walk11.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="pulando" pingpong="0" repeatcount="0" repeatto="0" sid="411997855101274" speed="0">
+                    <frame duration="1" hotspotX="0.507463" hotspotY="0.957447" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_jump.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="caindo" pingpong="0" repeatcount="0" repeatto="0" sid="871678848119882" speed="0">
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.956522" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\base pack\Player\p1_hurt.png">
+                        <collision-poly>
+                            <point x="0.15942" y="0.119565" />
+                            <point x="0.492754" y="0" />
+                            <point x="0.855072" y="0.108696" />
+                            <point x="0.942029" y="0.5" />
+                            <point x="0.913043" y="0.934783" />
+                            <point x="0.492754" y="0.98913" />
+                            <point x="0.231884" y="0.826087" />
+                            <point x="0.0869565" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="599072526876689">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Touch" sid="258431735554926">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="esquerdo" sid="101996619388079">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="678394882484688" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\controles de tela\lineDark19.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="direito" sid="884976861395311">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="856031345754141" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\controles de tela\lineDark20.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pulo" sid="913332318331136">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="619527052514057" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\GitKleber\curso_gratuito_construct2\Artes\controles de tela\lineDark21.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dirt_background" sid="143945448492272">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="169361447669484">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\grassCenter.png" />
+        </object-type>
+        <object-type name="base" sid="186623955850925">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="790073073425453">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Jumpthru" sid="910491741608277">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\grassHalfMid.png" />
+        </object-type>
+        <object-type name="plataforma_vertical" sid="158359201187172">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="827302700207435">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Jumpthru" sid="680639299490593">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="499376553818566" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="-0.333333" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\bridgeLogs.png">
+                        <collision-poly>
+                            <point x="0.694444" y="0.185185" />
+                            <point x="0.5" y="0.037037" />
+                            <point x="0.305556" y="0.185185" />
+                            <point x="0.944444" y="0.851852" />
+                            <point x="0.5" y="0.962963" />
+                            <point x="0.0555556" y="0.851852" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="life" sid="958502649210212">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="305943740648643" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\HUD\heart-hud2.png">
+                        <collision-poly>
+                            <point x="0.0122449" y="0.133333" />
+                            <point x="0.5" y="0" />
+                            <point x="0.814286" y="0.488889" />
+                            <point x="0.5" y="0.844444" />
+                            <point x="0.0244898" y="0.733333" />
+                            <point x="0.00612245" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="1.10909" hotspotY="0.510638" />
+                    <frame duration="1" hotspotX="0.648148" hotspotY="0.510638" />
+                    <frame duration="1" hotspotX="0.503106" hotspotY="0.510638" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="inimigo1" sid="746820244945524">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="535125796918138">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="165529932339471">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="965070787637120" speed="5">
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.529412" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\blockerMad.png" />
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.529412" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\blockerSad.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="inimigo2" sid="403428718943563">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="914544156698244">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="906091807608530">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="701742660863909">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="693904741291117" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\flyFly1.png">
+                        <collision-poly>
+                            <point x="0.222222" y="0.444444" />
+                            <point x="0.5" y="0" />
+                            <point x="0.791667" y="0.416667" />
+                            <point x="0.888889" y="0.5" />
+                            <point x="0.944444" y="0.888889" />
+                            <point x="0.5" y="0.861111" />
+                            <point x="0.0555556" y="0.888889" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.493333" hotspotY="0.483871" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\flyFly2.png">
+                        <collision-poly>
+                            <point x="0.16" y="0.387097" />
+                            <point x="0.493333" y="0" />
+                            <point x="0.813333" y="0.451613" />
+                            <point x="0.973333" y="0.483871" />
+                            <point x="0.946667" y="0.870968" />
+                            <point x="0.493333" y="1" />
+                            <point x="0.0666667" y="0.83871" />
+                            <point x="0.0133333" y="0.483871" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="inimigo3" sid="796679752851290">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="964550539787140">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="909217690995852">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="andando" pingpong="0" repeatcount="0" repeatto="0" sid="479087898339640" speed="4">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.516129" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\snailWalk1.png" />
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.516129" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\snailWalk2.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="morto" pingpong="0" repeatcount="1" repeatto="0" sid="597497358053802" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\snailShell_upsidedown.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="inimigo4" sid="505422099233314">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="361991066861853">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="773270086606656">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="andando" pingpong="0" repeatcount="1" repeatto="0" sid="188113153590005" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\slimeWalk1.png" />
+                    <frame duration="1" hotspotX="0.509804" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\slimeWalk2.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="morto" pingpong="0" repeatcount="1" repeatto="0" sid="582782366074158" speed="5">
+                    <frame duration="1" hotspotX="0.508475" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\slimeDead.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="inimigo5" sid="976368764511402">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="705644792913141">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="829523389604451" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\pokerMad.png">
+                        <image-point name="respawn" x="0.5" y="0.294521" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\pokerSad.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fogo" sid="997726844575998">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="159875741616971">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="girando" pingpong="0" repeatcount="0" repeatto="0" sid="128385250730109" speed="5">
+                    <frame duration="1" hotspotX="0.541667" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\fireball.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.541667">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.458333" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.458333">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="respawnfogo" sid="275278710664302">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="723325418458917">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="425367857195159" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="plataforma_horizontal" sid="605416242484237">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="633228907286840">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Jumpthru" sid="388878099867034">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="521099363207537" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="-0.333333" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\bridgeLogs.png">
+                        <collision-poly>
+                            <point x="0.694444" y="0.185185" />
+                            <point x="0.5" y="0.037037" />
+                            <point x="0.305556" y="0.185185" />
+                            <point x="0.944444" y="0.851852" />
+                            <point x="0.5" y="0.962963" />
+                            <point x="0.0555556" y="0.851852" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="background" sid="228400521926507">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\background.png" />
+        </object-type>
+        <object-type name="flag" sid="623728185561618">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="off" pingpong="0" repeatcount="1" repeatto="0" sid="637014234697131" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\flagRedHanging.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.371429" y="0.328571" />
+                            <point x="0.371429" y="0.542857" />
+                            <point x="0.342857" y="0.757143" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="on" pingpong="0" repeatcount="1" repeatto="0" sid="546968645255064" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\flagRed.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\flagRed2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="game_over" sid="742638425745590">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="635615967025376" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502164" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\mobile pack\gameover-panel.png">
+                        <collision-poly>
+                            <point x="0.0919811" y="0.168831" />
+                            <point x="0.5" y="0" />
+                            <point x="0.926887" y="0.134199" />
+                            <point x="0.903302" y="0.822511" />
+                            <point x="0.5" y="0.978355" />
+                            <point x="0.0825472" y="0.848485" />
+                            <point x="0.0683962" y="0.497835" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="button_yes" sid="943438582542030">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="721829420376321">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="167998821380158" speed="5">
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.507042" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\mobile pack\game-over-continue.png">
+                        <collision-poly>
+                            <point x="0.15942" y="0.15493" />
+                            <point x="0.492754" y="0" />
+                            <point x="0.84058" y="0.15493" />
+                            <point x="0.985507" y="0.492958" />
+                            <point x="0.84058" y="0.84507" />
+                            <point x="0.492754" y="0.957747" />
+                            <point x="0.173913" y="0.830986" />
+                            <point x="0.0144928" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="button_no" sid="619056054095908">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin" sid="671117259368632">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="972014219212752" speed="5">
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.507042" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\mobile pack\game-over-back.png">
+                        <collision-poly>
+                            <point x="0.15942" y="0.15493" />
+                            <point x="0.492754" y="0" />
+                            <point x="0.84058" y="0.15493" />
+                            <point x="0.985507" y="0.492958" />
+                            <point x="0.84058" y="0.84507" />
+                            <point x="0.492754" y="0.957747" />
+                            <point x="0.173913" y="0.830986" />
+                            <point x="0.0144928" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="coin_bronze" sid="568629952975892">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="719227655636590" speed="5">
+                    <frame duration="1" hotspotX="0.857143" hotspotY="0.171429" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\coinBronze.png">
+                        <collision-poly>
+                            <point x="0.573554" y="0" />
+                            <point x="0.85124" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.177843" />
+                            <point x="1" y="0.556851" />
+                            <point x="0.85124" y="0.702624" />
+                            <point x="0.550413" y="0.556851" />
+                            <point x="0.457851" y="0.177843" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="coin_silver" sid="138803595017941">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="462989105418664" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\coinSilver.png">
+                        <collision-poly>
+                            <point x="0.328571" y="0.328571" />
+                            <point x="0.5" y="0.271429" />
+                            <point x="0.671429" y="0.328571" />
+                            <point x="0.742857" y="0.5" />
+                            <point x="0.685714" y="0.685714" />
+                            <point x="0.5" y="0.757143" />
+                            <point x="0.314286" y="0.685714" />
+                            <point x="0.257143" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="coin_gold" sid="226997414904307">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="590213190565616" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\coinGold.png">
+                        <collision-poly>
+                            <point x="0.328571" y="0.328571" />
+                            <point x="0.5" y="0.271429" />
+                            <point x="0.671429" y="0.328571" />
+                            <point x="0.742857" y="0.5" />
+                            <point x="0.685714" y="0.685714" />
+                            <point x="0.5" y="0.757143" />
+                            <point x="0.314286" y="0.685714" />
+                            <point x="0.257143" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Function" sid="290962103263722">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="porta_bottom" sid="633700107073824">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="fechado" pingpong="0" repeatcount="1" repeatto="0" sid="706327274732276" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\door_closedMid.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="aberto" pingpong="0" repeatcount="1" repeatto="0" sid="371322368786690" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\door_openMid.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="porta_top" sid="993327176263697">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="fechado" pingpong="0" repeatcount="1" repeatto="0" sid="547169514847596" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.142857" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\door_closedTop.png">
+                        <collision-poly>
+                            <point x="0.430556" y="0.0238095" />
+                            <point x="0.569444" y="0.0238095" />
+                            <point x="0.819444" y="0.142857" />
+                            <point x="0.986111" y="0.97619" />
+                            <point x="0.0138889" y="0.97619" />
+                            <point x="0.180556" y="0.142857" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="aberto" pingpong="0" repeatcount="1" repeatto="0" sid="824512753607726" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.142857" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\door_openTop.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.214286" />
+                            <point x="0.5" y="0.0238095" />
+                            <point x="0.875" y="0.214286" />
+                            <point x="0.972222" y="0.5" />
+                            <point x="0.986111" y="0.97619" />
+                            <point x="0.0138889" y="0.97619" />
+                            <point x="0.0277778" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botao" sid="570911717501105">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="195293428168446" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.25" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\buttonRed.png">
+                        <collision-poly>
+                            <point x="0.208333" y="0.3125" />
+                            <point x="0.5" y="0.0208333" />
+                            <point x="0.791667" y="0.3125" />
+                            <point x="0.819444" y="0.5" />
+                            <point x="0.986111" y="0.979167" />
+                            <point x="0.0138889" y="0.979167" />
+                            <point x="0.180556" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="-0.285714" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\buttonRed_pressed.png">
+                        <collision-poly>
+                            <point x="0.680556" y="0.178571" />
+                            <point x="0.5" y="0.0357143" />
+                            <point x="0.319444" y="0.178571" />
+                            <point x="0.986111" y="0.964286" />
+                            <point x="0.0138889" y="0.964286" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="chave" sid="592397534877518">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="573802857903753" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.578947" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\keyYellow.png">
+                        <collision-poly>
+                            <point x="0.177419" y="0.0526316" />
+                            <point x="0.5" y="0.368421" />
+                            <point x="0.629032" y="0.368421" />
+                            <point x="0.967742" y="0.578947" />
+                            <point x="0.725806" y="0.947368" />
+                            <point x="0.5" y="0.631579" />
+                            <point x="0.258065" y="0.973684" />
+                            <point x="0.016129" y="0.578947" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cofre" sid="647470599863294">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="291556067640435" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\lock_yellow.png">
+                        <collision-poly>
+                            <point x="0.0285714" y="0.0285714" />
+                            <point x="0.5" y="0" />
+                            <point x="0.971429" y="0.0285714" />
+                            <point x="1" y="0.5" />
+                            <point x="0.971429" y="0.971429" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0285714" y="0.971429" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\lock_green.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="chave_hud" sid="260361199381137">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="885875643103069" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\HUD\hud_keyYellow.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\HUD\hud_keyYellow_disabled.png">
+                        <collision-poly>
+                            <point x="0.272727" y="0.3" />
+                            <point x="0.5" y="0.2" />
+                            <point x="0.886364" y="0.125" />
+                            <point x="0.886364" y="0.5" />
+                            <point x="0.613636" y="0.575" />
+                            <point x="0.5" y="0.95" />
+                            <point x="0.113636" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="estrela" sid="829335391578000">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="559911459420439" speed="5">
+                    <frame duration="1" hotspotX="0.671429" hotspotY="0.357143" original-source="C:\Users\luisg\OneDrive\Área de Trabalho\curso_gratuito_construct2-master\Artes\base pack\Items\star.png">
+                        <collision-poly>
+                            <point x="0.4" y="0.4" />
+                            <point x="0.5" y="0.285714" />
+                            <point x="0.6" y="0.4" />
+                            <point x="0.7" y="0.5" />
+                            <point x="0.657143" y="0.657143" />
+                            <point x="0.5" y="0.685714" />
+                            <point x="0.342857" y="0.657143" />
+                            <point x="0.3" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="367217631258521">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="number" sid="861028714562965">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="534826251595144" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\HUD\hud_0.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.513514" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\HUD\hud_1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\HUD\hud_2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\HUD\hud_3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="status" sid="775840948284906">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="881585892793433" speed="5">
+                    <frame duration="1" hotspotX="0.510638" hotspotY="0.510638" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\HUD\hud_p1.png">
+                        <collision-poly>
+                            <point x="0.148936" y="0.148936" />
+                            <point x="0.489362" y="0" />
+                            <point x="0.851064" y="0.148936" />
+                            <point x="1" y="0.489362" />
+                            <point x="0.851064" y="0.851064" />
+                            <point x="0.489362" y="1" />
+                            <point x="0.148936" y="0.851064" />
+                            <point x="0" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="coin_hud" sid="198843757740634">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="538451096471565" speed="5">
+                    <frame duration="1" hotspotX="0.510638" hotspotY="0.510638" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\HUD\hud_coins.png">
+                        <collision-poly>
+                            <point x="0.148936" y="0.148936" />
+                            <point x="0.489362" y="0" />
+                            <point x="0.851064" y="0.148936" />
+                            <point x="1" y="0.489362" />
+                            <point x="0.851064" y="0.851064" />
+                            <point x="0.489362" y="1" />
+                            <point x="0.148936" y="0.851064" />
+                            <point x="0" y="0.489362" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="placar" sid="880359146875095">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="joia" sid="359536224617235">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="475404347457815" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\HUD\hud_gem_yellow.png">
+                        <collision-poly>
+                            <point x="0.108696" y="0.138889" />
+                            <point x="0.5" y="0" />
+                            <point x="0.891304" y="0.138889" />
+                            <point x="1" y="0.5" />
+                            <point x="0.826087" y="0.777778" />
+                            <point x="0.5" y="1" />
+                            <point x="0.173913" y="0.777778" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="caixa_joia" sid="384309671152537">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="741468344587765">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="111157413288086" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.971429" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\boxItem.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.971429" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\boxItem_disabled.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sound" sid="637729889539353">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="190387494695301" speed="0">
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.507042" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\mobile pack\sound.png" />
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.507042" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\mobile pack\no-sound.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Start" sid="432991846526937">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="104300521253400" speed="5">
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.507042" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\mobile pack\continue.png">
+                        <collision-poly>
+                            <point x="0.15942" y="0.15493" />
+                            <point x="0.492754" y="0" />
+                            <point x="0.84058" y="0.15493" />
+                            <point x="0.985507" y="0.492958" />
+                            <point x="0.84058" y="0.84507" />
+                            <point x="0.492754" y="0.957747" />
+                            <point x="0.173913" y="0.830986" />
+                            <point x="0.0144928" y="0.492958" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="agua_bottom" sid="791682174860988">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Sine" sid="758041077537600">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\liquidWater.png" />
+        </object-type>
+        <object-type name="agua_top" sid="121517839668323">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Sine" sid="559037589167143">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\liquidWaterTop.png" />
+        </object-type>
+        <object-type name="lava_bottom" sid="935861848181866">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="494013714261575" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\liquidLava.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lava_top" sid="384860300618859">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\liquidLavaTop_mid.png" />
+        </object-type>
+        <object-type name="peixe" sid="561390786916334">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="844036378092135">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="674214166234273" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\fishSwim1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511628" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Enemies\fishSwim2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="respawnfogo1" sid="960695866318727">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="956905681436789" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mola" sid="573019240765532">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="856103890823874" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\springboardUp.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\springboardDown.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="nuvem" sid="960500825088717">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="801274943915504">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="522211120197705" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507042" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\cloud1.png" />
+                    <frame duration="1" hotspotX="0.503876" hotspotY="0.507042" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\cloud2.png" />
+                    <frame duration="1" hotspotX="0.503876" hotspotY="0.507042" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\cloud3.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="hill" sid="372478258461576">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="937467818440518" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\hill_largeAlt.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Tiles\hill_large.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="527769027613267">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="respawnfogo2" sid="572329181294039">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="459011742607188" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="destroy_comeco" sid="256747774842573">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="838022079994873" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="destroy_final" sid="924234707235405">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="109102694577567" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="destroy_fogo" sid="745672335699442">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="330280955960772" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lava_fogo" sid="474657623187499">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="199487753725581">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="683363125984710">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="732958795064599" speed="10">
+                    <frame duration="1" hotspotX="0.541667" hotspotY="0.5" original-source="C:\Users\luisg\Documents\github\SENAI\AlienCity-Gamedev\Artes\base pack\Items\fireball.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.541667">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.458333" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.458333">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont2" sid="862519839416599">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="SpriteFont3" sid="466836967407097">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="Parabens" sid="795005198989170">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Jogo.xml</layout>
+        <layout>Menu.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="4" />
+        <global-instance type="Touch" uid="5">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Function" uid="37" />
+        <global-instance type="Audio" uid="53">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="star.ogg" />
+        <file name="confirmation_001.ogg" />
+        <file name="Super Mario coin sound.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="background_music.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
