@@ -885,7 +885,7 @@
         <object-type name="peixe" sid="561390786916334">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Sine" sid="637231616773824">
+                <behavior-type name="Sine" sid="844036378092135">
                     <behavior id="Sin" />
                 </behavior-type>
             </behaviors>
@@ -1013,6 +1013,10 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="SpriteFont2" sid="862519839416599">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1047,6 +1051,7 @@
     </global-instances>
     <sounds-folder>
         <file name="star.ogg" />
+        <file name="confirmation_001.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="background_music.ogg" />
