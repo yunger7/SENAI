@@ -1,11 +1,21 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 h1 {
   text-align: center;
   color: #00142b;
 }
 
 form {
-  max-width: 600px;
+  width: 600px;
   margin: 20px auto;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,8 +29,17 @@ form > * {
   display: block;
 }
 
-form button {
-  margin: 1em;
+form input {
+  width: 80%;
+  margin-bottom: 1.5em;
+}
+
+label {
+  margin: 0 !important;
+}
+
+form input[type="submit"] {
+  margin: 1em !important;
 }
 
 form input::placeholder {
