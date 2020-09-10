@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
     // já existe no banco de dados
     echo "
     <script language='javascript' type='text/javascript'>
-    alert('Usuário já cadastrado no banco de dados');
+    alert('Música já cadastrada no banco de dados');
     window.location.href = 'add-music.php';
     </script>
     ";
@@ -66,7 +66,7 @@ if(isset($_POST['submit'])){
 </svg> Voltar para HOME</a>
 </header>
 
-<form action="add-music.php" method="POST" class="d-flex flex-column p-5" style="max-width: 1080px; margin: 1em auto;">
+<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST" class="d-flex flex-column p-5" style="max-width: 1080px; margin: 1em auto;">
   <label for="nome-musica" class="m-0 w-75 mx-auto">Nome da música</label>
   <input type="text" name="nome-musica" id="nome-musica" placeholder="Digite o nome da música" class="mb-3 w-75 mx-auto" required>
   <label for="cantor-banda" class="m-0 w-75 mx-auto">Cantor ou Banda</label>

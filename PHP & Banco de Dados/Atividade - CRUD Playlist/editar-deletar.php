@@ -1,6 +1,30 @@
 <?php
 include('config/conexao.php');
 
+// DELETAR MÚSICA SELECIONADA
+if(isset($_POST['excluir'])){
+  $musica_deletar = $_POST['id-deletar'];
+
+  $sql = "DELETE FROM playlist WHERE id = '$musica_deletar' ";
+
+  if(mysqli_query($conn, $sql)){
+    echo "
+    <script language='javascript' type='text/javascript'>
+    alert('Música excluída com sucesso!');
+    window.location.href = 'editar-deletar.php';
+    </script>
+    ";
+  } else {
+    echo "
+    <script language='javascript' type='text/javascript'>
+    alert('Houve um problema ao excluir a música');
+    window.location.href = 'editar-deletar.php';
+    </script>
+    ";
+  }
+}
+
+// BUSCAR REGISTROS
 $sql = "SELECT * FROM playlist ORDER BY id";
 $res = mysqli_query($conn, $sql);
 $musicas = mysqli_fetch_all($res, MYSQLI_ASSOC);
@@ -41,7 +65,7 @@ mysqli_close($conn);
         <td><?php echo $musica['duracao']; ?></td>
         <td><?php echo $musica['ano']; ?></td>
         <td>
-          <a href="" class="btn btn-warning">Editar</a>
+          <a href="editar.php?id=<?php echo $musica['id']; ?>" class="btn btn-warning">Editar</a>
           <form action="editar-deletar.php" method="POST" style="display: inline;">
             <input type="hidden" name="id-deletar" value="<?php echo $musica['id']; ?>">
             <input type="submit" name="excluir" value="Excluir" class="btn btn-danger ml-2">
