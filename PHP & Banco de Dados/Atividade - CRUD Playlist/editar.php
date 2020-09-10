@@ -1,30 +1,55 @@
 <?php
 include('config/conexao.php');
 
-if(isset($_POST['editar'])){
+if (isset($_POST['editar'])) {
+
   $id_editar = $_POST['id-editar'];
-  $nome = $_POST['nome-musica'];
-  $cantor_banda = $_POST['cantor-banda'];
-  $tipo = $_POST['tipo'];
-  $duracao = $_POST['duracao'];
-  $ano = $_POST['ano'];
 
-  $sql = "UPDATE playlist SET nome_musica = '$nome', cantor_banda = '$cantor_banda', tipo = '$tipo', duracao = '$duracao', ano = '$ano' WHERE id = '$id_editar' ";
+  // VERIFICAR SE JÁ EXISTE NO BANCO DE DADOS
+  // verificação feita pelo nome da música
+  $nome_musica = $_POST['nome-musica'];
+  $check = "SELECT * FROM playlist WHERE nome_musica = '$nome_musica'";
+  $res = mysqli_query($conn, $check);
+  $exist = mysqli_fetch_array($res, MYSQLI_NUM);
 
-  if(mysqli_query($conn, $sql)){
+  // liberando memoria
+  mysqli_free_result($res);
+
+  if ($exist[0] > 1) {
+    // já existe no banco de dados
     echo "
     <script language='javascript' type='text/javascript'>
-    alert('Música atualizada com sucesso!');
-    location.href = 'editar-deletar.php';
+    alert('Essa música já está cadastrada no banco de dados!');
+    location.href = 'editar.php?id=$id_editar';
     </script>
     ";
+    // header("Location: editar.php?id=$id_editar");
+
+    mysqli_close($conn);
   } else {
-    echo "
-    <script language='javascript' type='text/javascript'>
-    alert('Houve um problema ao atualizar a música');
-    location.href = 'editar-deletar.php';
-    </script>
-    ";
+    // não existe no banco de dados
+    $cantor_banda = $_POST['cantor-banda'];
+    $tipo = $_POST['tipo'];
+    $duracao = $_POST['duracao'];
+    $ano = $_POST['ano'];
+
+    $sql = "UPDATE playlist SET nome_musica = '$nome_musica', cantor_banda = '$cantor_banda', tipo = '$tipo', duracao = '$duracao', ano = '$ano' WHERE id = '$id_editar' ";
+
+    if (mysqli_query($conn, $sql)) {
+      echo "
+      <script language='javascript' type='text/javascript'>
+      alert('Música atualizada com sucesso!');
+      location.href = 'editar-deletar.php';
+      </script>
+      ";
+    } else {
+      echo "
+      <script language='javascript' type='text/javascript'>
+      alert('Houve um problema ao atualizar a música');
+      location.href = 'editar-deletar.php';
+      </script>
+      ";
+    }
   }
 }
 
@@ -81,7 +106,7 @@ mysqli_close($conn);
               </select></td>
             <td><input type="text" name="duracao" value="<?php echo $musica['duracao'] ?>" placeholder="HH:MM:SS" class="mb-3 w-75 mx-auto" required></td>
             <td>
-            <input type="text" name="ano" value="<?php echo $musica['ano'] ?>" placeholder="AAAA" class="mb-3 w-75 mx-auto" required>
+              <input type="text" name="ano" value="<?php echo $musica['ano'] ?>" placeholder="AAAA" class="mb-3 w-75 mx-auto" required>
             </td>
             <td><input type="submit" name="editar" value="Editar" class="btn btn-success"></td>
           </tr>

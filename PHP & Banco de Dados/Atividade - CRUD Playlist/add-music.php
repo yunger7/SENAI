@@ -4,7 +4,7 @@ if(isset($_POST['submit'])){
   include('config/conexao.php');
 
   // VERIFICAR SE JÁ EXISTE NO BANCO DE DADOS
-  // verificação feita apenas pelo nome da música
+  // verificação feita pelo nome da música
   $nome_musica = $_POST['nome-musica'];
   $check = "SELECT * FROM playlist WHERE nome_musica = '$nome_musica'";
   $res = mysqli_query($conn, $check);
