@@ -11,6 +11,10 @@ $sql = "SELECT * FROM usuario ORDER BY id" or die(mysqli_error($conn));
 $resultado = mysqli_query($conn, $sql);
 $usuarios = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
 
+// LIBERAR MEMÓRIA
+mysqli_free_result($resultado);
+mysqli_close($conn);
+
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +23,7 @@ $usuarios = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
 
 <body style="width: initial; height: initial; overflow: initial;">
   <header class="my-4 d-flex justify-content-between align-items-center">
-    <h2 class="h4 ml-4">Sistema de Agenda</h2>
+    <h2 class="h4 ml-4"><span><img src="images/agenda.svg" alt="Logo" width="50" height="50" class="mb-1 mr-2"></span>Sistema de Agenda</h2>
     <ul class="mr-4 list-unstyled">
       <li class="d-inline mr-2">Olá <?php echo $_SESSION["user"]; ?>!</li>
       <li class="d-inline"><a href="config/sair.php" class="btn btn-outline-danger">Sair</a></li>
@@ -29,7 +33,7 @@ $usuarios = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
     <?php include 'templates/menu.php'; ?>
   </nav>
   <section class="mt-4">
-    <h1 class="h3 text-center">Cadastrar pessoa</h1>
+    <h1 class="h3 text-center">Cadastrar usuário</h1>
     <form action="config/cadusuario.php" method="POST" class="p-5 w-75 bg-light mx-auto d-flex flex-column" style="max-width: 600px; border-radius: 15px;">
       <label for="nome" style="margin-bottom: 0.2em;">Nome: </label>
       <input class="form-control mb-2" type="text" name="nome" id="nome" placeholder="Digite o nome" required>
@@ -48,14 +52,15 @@ $usuarios = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
   </section>
   <hr>
   <section>
-    <table class="table text-center">
+    <table class="table table-hover text-center">
       <thead>
         <tr>
           <th scope="col">ID</th>
           <th scope="col">Nome</th>
           <th scope="col">Login</th>
           <th scope="col">Senha</th>
-          <th scope="col">Configurações</th>
+          <th scope="col">Tipo</th>
+          <th scope="col">Ações</th>
         </tr>
       </thead>
       <tbody>
@@ -65,9 +70,10 @@ $usuarios = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
             <td><?php echo $usuario['nome']; ?></td>
             <td><?php echo $usuario['login']; ?></td>
             <td><?php echo $usuario['senha']; ?></td>
+            <td><?php echo $usuario['tipo']; ?></td>
             <td>
-              <a href="editar.php?id=<?php echo $usuario['id']; ?>" class="btn btn-warning">Editar</a>
-              <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST" class="d-inline">
+              <a href="config/editar-usuario.php?id=<?php echo $usuario['id']; ?>" class="btn btn-warning">Editar</a>
+              <form action="config/excluir-usuario.php" method="POST" class="d-inline">
                 <input type="hidden" name="id-excluir" value="<?php echo $usuario['id']; ?>">
                 <input type="submit" value="Excluir" class="btn btn-danger">
               </form>
