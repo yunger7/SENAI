@@ -1,0 +1,10 @@
+C:\Users\luisg\Documents\GitHub\SENAI\C#\APP1\bin\Debug\APP1.exe.config
+C:\Users\luisg\Documents\GitHub\SENAI\C#\APP1\bin\Debug\APP1.exe
+C:\Users\luisg\Documents\GitHub\SENAI\C#\APP1\bin\Debug\APP1.pdb
+C:\Users\luisg\Documents\GitHub\SENAI\C#\APP1\obj\Debug\APP1.csprojAssemblyReference.cache
+C:\Users\luisg\Documents\GitHub\SENAI\C#\APP1\obj\Debug\APP1.mainForm.resources
+C:\Users\luisg\Documents\GitHub\SENAI\C#\APP1\obj\Debug\APP1.Properties.Resources.resources
+C:\Users\luisg\Documents\GitHub\SENAI\C#\APP1\obj\Debug\APP1.csproj.GenerateResource.cache
+C:\Users\luisg\Documents\GitHub\SENAI\C#\APP1\obj\Debug\APP1.csproj.CoreCompileInputs.cache
+C:\Users\luisg\Documents\GitHub\SENAI\C#\APP1\obj\Debug\APP1.exe
+C:\Users\luisg\Documents\GitHub\SENAI\C#\APP1\obj\Debug\APP1.pdb
