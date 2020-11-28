@@ -39,11 +39,14 @@ if (isset($_POST['submit-client'])) {
         <h2>Cadastrar Clientes</h2>
       </header>
       <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-        <label for="name">Nome</label>
-        <input type="text" name="nome" id="name" placeholder="Nome" required>
-        <label for="cpf">CPF</label>
-        <input type="text" name="cpf" id="cpf" placeholder="CPF" required>
-
+        <div class="input-field">
+          <input type="text" name="nome" id="name" required>
+          <label for="name">Nome</label>
+        </div>
+        <div class="input-field">
+          <input type="text" name="cpf" id="cpf" required>
+          <label for="cpf">CPF</label>
+        </div>
         <!-- Status -->
         <label class="status">Status</label>
         <ul class="radios">
@@ -61,11 +64,16 @@ if (isset($_POST['submit-client'])) {
           </li>
         </ul>
 
-        <label for="renda">Renda</label>
-        <input type="number" name="renda" id="renda" required>
-        <label for="credito">Crédito</label>
-        <input type="number" name="credito" id="credito" required>
+        <div class="input-field">
+          <input type="number" min="0" name="renda" id="renda" required>
+          <label for="renda">Renda</label>
+        </div>
+        <div class="input-field">
+          <input type="number" min="0" name="credito" id="credito" required>
+          <label for="credito">Crédito</label>
+        </div>
 
+        <!-- Buttons -->
         <div class="buttons">
           <button type="reset" class="btn waves-effect waves-light">
             Limpar

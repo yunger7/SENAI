@@ -4,8 +4,8 @@
   <?php include '../config/head.php'; ?>
 </head>
 <body>
+  <?php include '../templates/navbar.php'; ?>
   <main>
-    <section id="search"></section>
     <section id="order">
       <form action="#">
         
