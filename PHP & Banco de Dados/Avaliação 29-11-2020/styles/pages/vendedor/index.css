@@ -1,0 +1,33 @@
+.register-client {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.person {
+  margin-top: 1rem;
+}
+
+.status {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  margin-top: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
