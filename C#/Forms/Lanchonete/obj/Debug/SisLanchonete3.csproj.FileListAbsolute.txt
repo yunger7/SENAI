@@ -1,0 +1,11 @@
+C:\Programas\SisLanchonete3\bin\Debug\SisLanchonete3.exe.config
+C:\Programas\SisLanchonete3\bin\Debug\SisLanchonete3.exe
+C:\Programas\SisLanchonete3\bin\Debug\SisLanchonete3.pdb
+C:\Programas\SisLanchonete3\obj\Debug\SisLanchonete3.csprojAssemblyReference.cache
+C:\Programas\SisLanchonete3\obj\Debug\SisLanchonete3.FormLogin.resources
+C:\Programas\SisLanchonete3\obj\Debug\SisLanchonete3.FormSplashScreen.resources
+C:\Programas\SisLanchonete3\obj\Debug\SisLanchonete3.Properties.Resources.resources
+C:\Programas\SisLanchonete3\obj\Debug\SisLanchonete3.csproj.GenerateResource.cache
+C:\Programas\SisLanchonete3\obj\Debug\SisLanchonete3.csproj.CoreCompileInputs.cache
+C:\Programas\SisLanchonete3\obj\Debug\SisLanchonete3.exe
+C:\Programas\SisLanchonete3\obj\Debug\SisLanchonete3.pdb

@@ -1,0 +1,15 @@
+C:\Programas\SisLanchonete2\bin\Debug\SisLanchonete2.exe.config
+C:\Programas\SisLanchonete2\bin\Debug\SisLanchonete2.exe
+C:\Programas\SisLanchonete2\bin\Debug\SisLanchonete2.pdb
+C:\Programas\SisLanchonete2\obj\Debug\SisLanchonete2.csprojAssemblyReference.cache
+C:\Programas\SisLanchonete2\obj\Debug\SisLanchonete2.FormLogin.resources
+C:\Programas\SisLanchonete2\obj\Debug\SisLanchonete2.FormSplashScreen.resources
+C:\Programas\SisLanchonete2\obj\Debug\SisLanchonete2.Properties.Resources.resources
+C:\Programas\SisLanchonete2\obj\Debug\SisLanchonete2.csproj.GenerateResource.cache
+C:\Programas\SisLanchonete2\obj\Debug\SisLanchonete2.csproj.CoreCompileInputs.cache
+C:\Programas\SisLanchonete2\obj\Debug\SisLanchonete2.exe
+C:\Programas\SisLanchonete2\obj\Debug\SisLanchonete2.pdb
+C:\Programas\SisLanchonete2\obj\Debug\SisLanchonete2.FormPrincipal.resources
+C:\Programas\SisLanchonete2\obj\Debug\SisLanchonete2.FormUsuario.resources
+C:\Programas\SisLanchonete2\bin\Debug\DbLanchonete.mdf
+C:\Programas\SisLanchonete2\bin\Debug\DbLanchonete_log.ldf

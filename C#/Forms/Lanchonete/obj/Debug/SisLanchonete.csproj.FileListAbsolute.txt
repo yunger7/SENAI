@@ -1,0 +1,17 @@
+C:\Programas\SisLanchonete\obj\Debug\SisLanchonete.csprojAssemblyReference.cache
+C:\Programas\SisLanchonete\obj\Debug\SisLanchonete.FormLogin.resources
+C:\Programas\SisLanchonete\obj\Debug\SisLanchonete.FormSplashScreen.resources
+C:\Programas\SisLanchonete\obj\Debug\SisLanchonete.Properties.Resources.resources
+C:\Programas\SisLanchonete\obj\Debug\SisLanchonete.csproj.GenerateResource.cache
+C:\Programas\SisLanchonete\obj\Debug\SisLanchonete.csproj.CoreCompileInputs.cache
+C:\Programas\SisLanchonete\bin\Debug\SisLanchonete.exe.config
+C:\Programas\SisLanchonete\bin\Debug\SisLanchonete.exe
+C:\Programas\SisLanchonete\bin\Debug\SisLanchonete.pdb
+C:\Programas\SisLanchonete\obj\Debug\SisLanchonete.exe
+C:\Programas\SisLanchonete\obj\Debug\SisLanchonete.pdb
+C:\Programas\SisLanchonete\obj\Debug\SisLanchonete.FormPrincipal.resources
+C:\Programas\SisLanchonete\bin\Debug\DbLanchonete.mdf
+C:\Programas\SisLanchonete\bin\Debug\DbLanchonete_log.ldf
+C:\Programas\SisLanchonete\obj\Debug\SisLanchonete.FormUsuario.resources
+C:\Programas\SisLanchonete\obj\Debug\SisLanchonete.FormCliente.resources
+C:\Programas\SisLanchonete\obj\Debug\SisLanchonete.FormProduto.resources
