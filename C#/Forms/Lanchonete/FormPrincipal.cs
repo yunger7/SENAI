@@ -59,5 +59,11 @@ namespace SisLanchonete
             FormProduto formProduto = new FormProduto();
             formProduto.Show();
         }
+
+        private void vendaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormVenda formVenda = new FormVenda();
+            formVenda.Show();
+        }
     }
 }

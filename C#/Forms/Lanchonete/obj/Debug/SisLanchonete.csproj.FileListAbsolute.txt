@@ -15,3 +15,4 @@ C:\Programas\SisLanchonete\bin\Debug\DbLanchonete_log.ldf
 C:\Programas\SisLanchonete\obj\Debug\SisLanchonete.FormUsuario.resources
 C:\Programas\SisLanchonete\obj\Debug\SisLanchonete.FormCliente.resources
 C:\Programas\SisLanchonete\obj\Debug\SisLanchonete.FormProduto.resources
+C:\Programas\SisLanchonete\obj\Debug\SisLanchonete.FormVenda.resources
