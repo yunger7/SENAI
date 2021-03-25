@@ -114,6 +114,7 @@ namespace SisLanchonete
             this.cbxProduto.Name = "cbxProduto";
             this.cbxProduto.Size = new System.Drawing.Size(352, 21);
             this.cbxProduto.TabIndex = 5;
+            this.cbxProduto.SelectedIndexChanged += new System.EventHandler(this.cbxProduto_SelectedIndexChanged);
             // 
             // lblIdProduto
             // 
@@ -165,6 +166,7 @@ namespace SisLanchonete
             this.btnNovoItem.TabIndex = 12;
             this.btnNovoItem.Text = "Novo Item";
             this.btnNovoItem.UseVisualStyleBackColor = true;
+            this.btnNovoItem.Click += new System.EventHandler(this.btnNovoItem_Click);
             // 
             // btnEditarItem
             // 

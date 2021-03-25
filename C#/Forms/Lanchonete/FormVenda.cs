@@ -93,5 +93,98 @@ namespace SisLanchonete
             dgvVenda.Columns.Add("Valor", "Valor");
             dgvVenda.Columns.Add("Total", "Total");
         }
+
+        private void cbxProduto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            con.Close();
+            SqlCommand cmd = new SqlCommand("SELECT * FROM [Produto	] WHERE Id = @Id", con);
+            cmd.Parameters.AddWithValue("@Id", cbxProduto.SelectedValue);
+            cmd.CommandType = CommandType.Text;
+            con.Open();
+            SqlDataReader rd = cmd.ExecuteReader();
+            if (rd.Read())
+            {
+                txtValor.Text = rd["valor"].ToString();
+                txtIdProduto.Text = rd["Id"].ToString();
+                txtQuantidade.Focus();
+                rd.Close();
+                con.Close();
+            }
+            else
+            {
+                MessageBox.Show("Nenhum registro encontrado!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                con.Close();
+            }
+        }
+
+        private void btnNovoItem_Click(object sender, EventArgs e)
+        {
+
+
+            if (dgvVenda.RowCount == 0)
+            {
+                DataGridViewRow item = new DataGridViewRow();
+                item.CreateCells(dgvVenda);
+
+                float total, valor, quantidade;
+
+
+                valor = float.Parse(txtValor.Text);
+                quantidade = float.Parse(txtQuantidade.Text);
+                total = valor * quantidade;
+
+                item.Cells[0].Value = txtIdProduto.Text;
+                item.Cells[1].Value = cbxProduto.Text;
+                item.Cells[2].Value = txtQuantidade.Text;
+                item.Cells[3].Value = txtValor.Text;
+                item.Cells[4].Value = total.ToString();
+                dgvVenda.Rows.Add(item);
+            }
+
+            else
+            {
+                int repetido = 0;
+                foreach (DataGridViewRow dr in dgvVenda.Rows)
+                {
+                    if (txtIdProduto.Text == Convert.ToString(dr.Cells[0].Value))
+                    {
+
+                        MessageBox.Show("Esse item ja foi adicionado!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        repetido = 1;
+                    }
+                }
+                if (repetido == 0)
+                {
+                    DataGridViewRow item = new DataGridViewRow();
+                    item.CreateCells(dgvVenda);
+
+                    float total, valor, quantidade;
+
+                    valor = float.Parse(txtValor.Text);
+                    quantidade = float.Parse(txtQuantidade.Text);
+                    total = valor * quantidade;
+
+                    item.Cells[0].Value = txtIdProduto.Text;
+                    item.Cells[1].Value = cbxProduto.Text;
+                    item.Cells[2].Value = txtQuantidade.Text;
+                    item.Cells[3].Value = txtValor.Text;
+                    item.Cells[4].Value = total.ToString();
+
+                    dgvVenda.Rows.Add(item);
+                }
+
+            }
+
+            double conta;
+            conta = 0;
+            foreach (DataGridViewRow dr in dgvVenda.Rows)
+            {
+
+                conta = conta + Convert.ToDouble(dr.Cells[4].Value);
+
+                txtTotal.Text = Convert.ToString(conta);
+            }
+
+        }
     }
 }
