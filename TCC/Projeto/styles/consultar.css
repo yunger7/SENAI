@@ -1,0 +1,294 @@
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.dot {
+  display: block;
+  text-align: right;
+  padding-right: 20px;
+  padding-bottom: 4px;
+  position: relative;
+}
+
+.dot::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dot.d-red::before {
+  background-color: #ee0000;
+}
+
+.dot.d-blue::before {
+  background-color: #3788d8;
+}
+
+.event {
+  height: fit-content;
+}
+
+.eventTag {
+  margin: 0;
+}
+
+.reserva {
+  margin-top: 1rem;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-inputs, .selecionar-veiculo {
+  height: 100%;
+}
+
+.date-inputs {
+  width: 60%;
+}
+
+.date-inputs .input-field {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.selecionar-veiculo {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.buttons .material-icons {
+  font-size: 1.5rem;
+}
+
+.buttons a .material-icons {
+  margin-right: 0.5rem;
+}
+
+.buttons button .material-icons {
+  margin-left: 0.5rem;
+}
+
+#finalizar-reserva, #btn-confirmar {
+  background-color: var(--confirm) !important;
+}
+
+.fc-event{
+  cursor: pointer;
+}
+
+/* Modal */
+#modal-reserva {
+  width: 75vw;
+  max-height: 100%;
+  height: 75vh;
+}
+
+.modal-content header {
+  text-align: center;
+}
+
+.modal-content header i {
+  font-size: 5rem;
+  margin: 0 auto;
+}
+
+.modal .input-field {
+  margin-bottom: 2rem;
+}
+
+#modal-detalhes h4 {
+  margin-bottom: 2rem;
+}
+
+#modal-detalhes .col {
+  padding: 0 !important;
+}
+
+#modal-detalhes .det-buttons {
+  margin: 2rem 0 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#modal-detalhes .det-retirada {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#modal-detalhes .det-retirada .input-field {
+  width: 100%;
+}
+
+#modal-detalhes .det-buttons-actions {
+  display: flex;  
+  align-items: flex-end;
+}
+
+#modal-detalhes .det-buttons-actions #det-excluir {
+  margin-left: .5rem;
+}
+
+/* Toast */
+#toast-container {
+  top: 75px !important;
+  right: auto !important;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  max-height: 250px;
+}
+
+@media screen and (max-width: 800px) {
+  .title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .legenda {
+    margin-bottom: 1rem;
+  }
+
+  .dot {
+    text-align: left;
+    padding-right: 0px;
+    padding-left: 20px;
+    padding-bottom: 0;
+  }
+
+  .dot::before {
+    left: 0;
+  }
+
+  .fc-header-toolbar {
+    flex-direction: column;
+    flex-flow: column;
+    align-items: flex-start !important;
+  }
+
+  .fc-header-toolbar > * {
+    margin-bottom: 1rem;
+  }
+
+  .reserva {
+    flex-direction: column;
+  }
+
+  .date-inputs {
+    width: 100%;
+  }
+
+  .selecionar-veiculo {
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .selecionar-veiculo .input-field {
+    width: 50%;
+  }
+
+  .selecionar-veiculo a {
+    width: 45%;
+  }
+
+  .quick-access {
+    display: flex;
+    align-items: center;
+  }
+
+  .quick-access > *:first-child {
+    height: 40px;
+  }
+
+  .quick-access .sidenav-trigger {
+    position: relative;
+    bottom: .75rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .quick-access .sidenav-trigger {
+    bottom: .25rem;
+  }
+
+  #modal-reserva .container > *:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #modal-reserva .container > *:nth-child(3) > * {
+    width: 100%;
+  }
+
+  #modal-reserva .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #modal-reserva .buttons > * {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .date-inputs .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .date-inputs .row > * {
+    width: 100% !important;
+    margin: 0 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .selecionar-veiculo {
+    padding: .75rem;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .selecionar-veiculo > * {
+    width: 100% !important;
+  }
+
+  .quick-access > *:last-child {
+    display: none;
+  }
+
+  .quick-access .sidenav-trigger {
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+  }
+
+  .det-buttons {
+    flex-direction: column;
+    align-items: stretch !important;
+  }
+
+  .det-buttons button {
+    margin-bottom: 1rem;
+  }
+}
